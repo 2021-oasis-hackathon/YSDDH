@@ -1,2 +1,2 @@
-# 21st Team Repository
-### 프로토타입을 소개해주세요!
+# YSDDH
+### 넌 역시 대단해!
