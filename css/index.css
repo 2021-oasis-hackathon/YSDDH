@@ -26,10 +26,13 @@ fill: #fff;
   flex-direction: column;
   align-items: center;
   height: auto;
+
 }
 .name{
   font-size: 14px;
   height: auto;
+  /* border-radius: 10px;
+  border-radius: 0.5px solid #fff; */
 }
 .ysddh{
   padding-left: 6px;

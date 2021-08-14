@@ -1,0 +1,102 @@
+body, div{
+  margin: 0px 0px 0px 0px;
+  color: #fff;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+body{
+  height: 100%;
+  background-color: rgba(240, 233, 240, 1);
+}
+.page-outer-container{
+  height: 100vh;
+}
+.top-container{
+  height: 158px;
+  background-color: rgba(116, 106, 229, 1);
+  border-radius: 20px;
+}
+.text-container{
+  padding-left: 30px;
+  padding-top: 50px;
+  line-height: 30px;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  height: auto;
+  width: auto;
+}
+.text-container b{
+  font-weight: 600;
+}
+.bottom-container{
+  display: flex;
+  flex-direction: column;
+  margin: 15px 20px 20px 20px;
+}
+.contents-container{
+  background-color: #fff;
+  height: 306px;
+  border-radius: 20px;
+}
+.contents{
+  margin: 10px 10px 10px 10px;
+}
+.now-container{
+  margin-top: 15px;
+  background-color: #fff;
+  height: 262px;
+}
+.name-img{
+  width: 14px;
+  margin-left: 20px;
+  margin-right: 10px;
+  padding-top: 4px;
+}
+.name-container{
+  display: flex;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.name-text{
+  color: black;
+  font-size: 13px;
+}
+.image{
+  width: 45px;
+}
+.inner-container{
+  margin: 0px 5px 0px 5px;
+  padding-left: 15px;
+  width: 145px;
+  height: 145px;
+  background-color: #eeeeee;
+  border-radius: 20px;
+  border: 0.5px solid #e3e3e3
+}
+.first-container{
+  display: flex;
+  justify-content: center;
+}
+.head{
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #000;
+  padding-bottom: 4px;
+}
+.desc{
+  padding-bottom: 8px;
+  color: #000;
+  font-size: 10px;
+}
+.img-con{
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.second-container{
+
+}
+.second-inner{
+  background-color: rgba(238, 238, 238, 0.5)EE;
+}
