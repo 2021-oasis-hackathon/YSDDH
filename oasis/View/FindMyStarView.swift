@@ -11,18 +11,46 @@ struct FindMyStarView: View {
     @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
-        VStack{
-            ZStack{
+        ZStack{
+            VStack{
                 Image(uiImage:UIImage(named: "RecommendBack") ?? UIImage(named: "placeHolderImage")!)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .ignoresSafeArea()
+                Spacer()
+                
             }
-            Spacer()
             
+            VStack(alignment:.leading){
+                Spacer()
+                HStack{
+                    VStack(alignment: .leading){
+                            Button(action: {
+                                viewRouter.currentPage = .page2
+                            }, label: {
+                                Image(uiImage:UIImage(named: "goBackBtnWhite") ?? UIImage(named: "placeHolderImage")!)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 12, height: 15)
+                                    .background(Color(.black))
+                            })
+                            Spacer()
+                        }
+                    Spacer()
+                    
+                }.offset(x:30, y:10)
+            }
             
-
+        
         }
+        
+        
+//        VStack{
+//
+//
+//            }
+            
+        
         
     }
 }

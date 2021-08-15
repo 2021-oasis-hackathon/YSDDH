@@ -30,8 +30,9 @@ struct MainPageView: View {
                             Button(action: {
                                 viewRouter.currentPage = .page3
                             }, label: {
+                                
                                 SquareView("추천 별빛", "별빛따라가 추천하는 여행 코스를 찾아봐요", (UIImage(named:"airplane") ?? UIImage(named: "placeHolderImage"))!)
-                            })
+                            }).buttonStyle(PlainButtonStyle())
                             
                             SquareView("나의 별빛", "내게 딱 맞는 별빛을 찾으러 가요", (UIImage(named:"starIcon") ?? UIImage(named: "placeHolderImage"))!)
                         }
