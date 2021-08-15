@@ -6,11 +6,6 @@ import org.json.simple.parser.ParseException;
 public class Site {
     public static void main(String[] args){
         //nx6 ny7 구름8 습도9 y1-10 y2-11 y3-12 y4-13 고유점수14 상대점수15 점수합산16
-        // 마지막에서 첫번쨰 = 점수
-//        마지막에서 두번째 = 습도
-//        마지막에서 세번째 = 구름
-        //마지막에서 네번째 = ny
-        //마지막에서 다섯번째 = nx
         String[][] siteStr = new String[][]
                 {{"전북", "완주군", "35.9442","127.29018" ,"0.39","140","63","89","","","","","","","0","","0"},
                 {"전북","진안군", "35.87646", "127.497"   ,"1.36","279","68","88","","","","","","","0","","0"},
@@ -24,22 +19,25 @@ public class Site {
                 {"전남", "장흥군", "34.78328", "126.74286","0.95","53","59","64","","","","","","","0","","0"},
                 {"전남", "고흥군", "34.59317", "127.50778","0.26","30","66","62","","","","","","","0","","0"}};
 
+        //ParseJSON 객체 생성
         ParseJSON parseJSON = new ParseJSON();
         String[] ansStr = new String[2];
         for(int i = 0 ; i < siteStr.length ; i++){
             try {
+                //ParseJSON 의 weather method 호출
                 ansStr = parseJSON.weather(siteStr[i][6],siteStr[i][7]);
 
             } catch (IOException | ParseException e) {
                 e.printStackTrace();
             }
+            //siteStr[i][9]=습도, siteStr[i][9]=습도
             siteStr[i][8] = ansStr[0];
             siteStr[i][9] = ansStr[1];
         }
 
         //y1계산
 
-        //y2계산
+        //y2계산 siteStr[i][9]=습도
         for(int i = 0 ; i < siteStr.length ; i++){
             int num = Integer.parseInt(siteStr[i][9]);
             double y2 = Math.exp(-(num/100));
@@ -50,43 +48,49 @@ public class Site {
             siteStr[i][14] = String.valueOf(score);
 
         }
-        //y3계산
+        //y3계산 siteStr[i][4]=광공해
         for(int i = 0 ; i < siteStr.length ; i++){
             double num = Double.valueOf(siteStr[i][4]);
             double y3 = (num-10);
-            double y33 = Math.pow(y3,2);
-            y33 /= 100;
-            siteStr[i][12] = String.valueOf(y33);
+            y3 = Math.pow(y3,2);
+            y3 /= 100;
+            siteStr[i][12] = String.valueOf(y3);
             double score = Double.valueOf(siteStr[i][14]);
-            y33*=65;
-//            System.out.println(y33);
-            score+=y33;
+            y3*=65;
+            score+=y3;
             siteStr[i][14] = String.valueOf(score);
         }
+
         //y4계산
         for(int i = 0 ; i <siteStr.length ; i++){
+            //siteStr[i][8]=구름 정보
             int num = Integer.parseInt(siteStr[i][8]);
             double y4 = 1 / Math.exp(num);
-            double y44 = -0.1565 * y4 + 1.1565;
-            siteStr[i][13] = String.valueOf(y44);
-            y44*=100;
-            siteStr[i][15] = String.valueOf(y44);
+            y4 = -0.1565 * y4 + 1.1565;
+            siteStr[i][13] = String.valueOf(y4);
+            y4*=100;
+            siteStr[i][15] = String.valueOf(y4);
         }
 
 
-
+        //고유점수와 상대점수를 바탕으로 최종점수 계산
         for(int i = 0 ; i < siteStr.length ; i++ ){
+            //siteStr[i][14] 고유점수
             double score_1 = Double.valueOf(siteStr[i][14]);
+            //siteStr[i][15] 상대점수
             double score_2 = Double.valueOf(siteStr[i][15]);
             double final_score = (score_1 + score_2) / 2;
+            //siteStr[i][15] 최종점수
             siteStr[i][16] = String.valueOf(final_score);
         }
-        //정렬 comparator 사용하고 싶긴한데 일단 보류
+
+        //정렬 comparator 사용하고 싶긴한데 일단 보류, Bubble sort
         for(int i = 0; i < siteStr.length; i++) {
             for(int j = 0 ; j < siteStr.length - i - 1 ; j++) {
                 double jj = Double.valueOf(siteStr[j][16]);
                 double jjp = Double.valueOf(siteStr[j+1][16]);
                 if(jj < jjp) {
+                    //temp용 string 배열 선언 후 교체
                     String[] strArr = new String[16];
                     strArr = siteStr[j+1];
                     siteStr[j+1] = siteStr[j];
@@ -102,6 +106,8 @@ public class Site {
 //            }
 //            System.out.println();
 //        }
+
+        //Top 3 출력
         for(int i = 0 ; i < 3 ; i++ ){
             System.out.println(siteStr[i][1] + " " + siteStr[i][16]);
         }
