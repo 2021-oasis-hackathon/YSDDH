@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct MainPageView: View {
+    @EnvironmentObject var viewRouter: ViewRouter
+    
     var body: some View {
         
 // MARK: BackGround Photo Part
@@ -25,15 +27,13 @@ struct MainPageView: View {
 // MARK: Square Layout
                     VStack{
                         HStack{
-                            NavigationLink(
-                                destination: Text("Destination"),
-                                label: {
-                                    SquareView("추천 별빛", "별빛따라가 추천하는 여행 코스를 찾아봐요", (UIImage(named:"airplane") ?? UIImage(named: "placeHolderImage"))!)
-                                    
-                                })
-    
+                            Button(action: {
+                                viewRouter.currentPage = .page3
+                            }, label: {
+                                SquareView("추천 별빛", "별빛따라가 추천하는 여행 코스를 찾아봐요", (UIImage(named:"airplane") ?? UIImage(named: "placeHolderImage"))!)
+                            })
+                            
                             SquareView("나의 별빛", "내게 딱 맞는 별빛을 찾으러 가요", (UIImage(named:"starIcon") ?? UIImage(named: "placeHolderImage"))!)
-
                         }
                         
 // MARK: Memory with star Part
