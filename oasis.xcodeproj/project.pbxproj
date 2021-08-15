@@ -9,14 +9,17 @@
 /* Begin PBXBuildFile section */
 		CB31892B26C92DCF00B126F6 /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB31892326C92A1C00B126F6 /* NotoSansKR-Bold.otf */; };
 		CB31892C26C92DD300B126F6 /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB31892226C9297700B126F6 /* NotoSansKR-Regular.otf */; };
-		CB31894226C9329600B126F6 /* qwerqwre.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31894126C9329500B126F6 /* qwerqwre.swift */; };
+		CB31898026C99C4C00B126F6 /* FindMyStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31897F26C99C4C00B126F6 /* FindMyStarView.swift */; };
+		CB31898226C9A82A00B126F6 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31898126C9A82A00B126F6 /* ViewRouter.swift */; };
+		CB31898426C9A89A00B126F6 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31898326C9A89A00B126F6 /* Page.swift */; };
+		CB31898626C9AB5500B126F6 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31898526C9AB5500B126F6 /* StartView.swift */; };
 		CB57E28826C8245200F091ED /* oasisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E28726C8245200F091ED /* oasisApp.swift */; };
 		CB57E28A26C8245200F091ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E28926C8245200F091ED /* ContentView.swift */; };
 		CB57E28C26C8245300F091ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB57E28B26C8245300F091ED /* Assets.xcassets */; };
 		CB57E28F26C8245300F091ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB57E28E26C8245300F091ED /* Preview Assets.xcassets */; };
 		CB57E29A26C8245400F091ED /* oasisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E29926C8245400F091ED /* oasisTests.swift */; };
 		CB57E2A526C8245400F091ED /* oasisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E2A426C8245400F091ED /* oasisUITests.swift */; };
-		CB57E2B926C8451800F091ED /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E2B826C8451800F091ED /* SwiftUIView.swift */; };
+		CB57E2B926C8451800F091ED /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E2B826C8451800F091ED /* MainPageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +49,10 @@
 		CB31891A26C9288D00B126F6 /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
 		CB31892226C9297700B126F6 /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
 		CB31892326C92A1C00B126F6 /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
-		CB31894126C9329500B126F6 /* qwerqwre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qwerqwre.swift; sourceTree = "<group>"; };
+		CB31897F26C99C4C00B126F6 /* FindMyStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyStarView.swift; sourceTree = "<group>"; };
+		CB31898126C9A82A00B126F6 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		CB31898326C9A89A00B126F6 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		CB31898526C9AB5500B126F6 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		CB57E28426C8245200F091ED /* oasis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oasis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB57E28726C8245200F091ED /* oasisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oasisApp.swift; sourceTree = "<group>"; };
 		CB57E28926C8245200F091ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,7 +65,7 @@
 		CB57E2A026C8245400F091ED /* oasisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oasisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB57E2A426C8245400F091ED /* oasisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oasisUITests.swift; sourceTree = "<group>"; };
 		CB57E2A626C8245400F091ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB57E2B826C8451800F091ED /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		CB57E2B826C8451800F091ED /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; tabWidth = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,17 @@
 			path = ../../../../../Downloads/Noto_Sans_KR;
 			sourceTree = "<group>";
 		};
+		CB31897C26C99B7500B126F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CB57E28926C8245200F091ED /* ContentView.swift */,
+				CB31898526C9AB5500B126F6 /* StartView.swift */,
+				CB57E2B826C8451800F091ED /* MainPageView.swift */,
+				CB31897F26C99C4C00B126F6 /* FindMyStarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CB57E27B26C8245200F091ED = {
 			isa = PBXGroup;
 			children = (
@@ -125,16 +142,16 @@
 		CB57E28626C8245200F091ED /* oasis */ = {
 			isa = PBXGroup;
 			children = (
+				CB31897C26C99B7500B126F6 /* View */,
 				CB57E28726C8245200F091ED /* oasisApp.swift */,
-				CB57E28926C8245200F091ED /* ContentView.swift */,
-				CB57E2B826C8451800F091ED /* SwiftUIView.swift */,
-				CB31894126C9329500B126F6 /* qwerqwre.swift */,
-				CB57E28B26C8245300F091ED /* Assets.xcassets */,
 				CB57E29026C8245300F091ED /* Info.plist */,
+				CB57E28B26C8245300F091ED /* Assets.xcassets */,
 				CB31892226C9297700B126F6 /* NotoSansKR-Regular.otf */,
 				CB31892326C92A1C00B126F6 /* NotoSansKR-Bold.otf */,
 				CB31891326C9288D00B126F6 /* Noto_Sans_KR */,
 				CB57E28D26C8245300F091ED /* Preview Content */,
+				CB31898126C9A82A00B126F6 /* ViewRouter.swift */,
+				CB31898326C9A89A00B126F6 /* Page.swift */,
 			);
 			path = oasis;
 			sourceTree = "<group>";
@@ -296,10 +313,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB31898226C9A82A00B126F6 /* ViewRouter.swift in Sources */,
 				CB57E28A26C8245200F091ED /* ContentView.swift in Sources */,
+				CB31898426C9A89A00B126F6 /* Page.swift in Sources */,
 				CB57E28826C8245200F091ED /* oasisApp.swift in Sources */,
-				CB57E2B926C8451800F091ED /* SwiftUIView.swift in Sources */,
-				CB31894226C9329600B126F6 /* qwerqwre.swift in Sources */,
+				CB57E2B926C8451800F091ED /* MainPageView.swift in Sources */,
+				CB31898026C99C4C00B126F6 /* FindMyStarView.swift in Sources */,
+				CB31898626C9AB5500B126F6 /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
