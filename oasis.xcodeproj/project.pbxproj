@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB31892B26C92DCF00B126F6 /* NotoSansKR-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB31892326C92A1C00B126F6 /* NotoSansKR-Bold.otf */; };
+		CB31892C26C92DD300B126F6 /* NotoSansKR-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB31892226C9297700B126F6 /* NotoSansKR-Regular.otf */; };
+		CB31894226C9329600B126F6 /* qwerqwre.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31894126C9329500B126F6 /* qwerqwre.swift */; };
 		CB57E28826C8245200F091ED /* oasisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E28726C8245200F091ED /* oasisApp.swift */; };
 		CB57E28A26C8245200F091ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E28926C8245200F091ED /* ContentView.swift */; };
 		CB57E28C26C8245300F091ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB57E28B26C8245300F091ED /* Assets.xcassets */; };
@@ -34,6 +37,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB31891426C9288D00B126F6 /* NotoSansKR-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Light.otf"; sourceTree = "<group>"; };
+		CB31891526C9288D00B126F6 /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		CB31891626C9288D00B126F6 /* NotoSansKR-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Thin.otf"; sourceTree = "<group>"; };
+		CB31891726C9288D00B126F6 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		CB31891826C9288D00B126F6 /* NotoSansKR-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Black.otf"; sourceTree = "<group>"; };
+		CB31891926C9288D00B126F6 /* NotoSansKR-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Medium.otf"; sourceTree = "<group>"; };
+		CB31891A26C9288D00B126F6 /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		CB31892226C9297700B126F6 /* NotoSansKR-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Regular.otf"; sourceTree = "<group>"; };
+		CB31892326C92A1C00B126F6 /* NotoSansKR-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansKR-Bold.otf"; sourceTree = "<group>"; };
+		CB31894126C9329500B126F6 /* qwerqwre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qwerqwre.swift; sourceTree = "<group>"; };
 		CB57E28426C8245200F091ED /* oasis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oasis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB57E28726C8245200F091ED /* oasisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oasisApp.swift; sourceTree = "<group>"; };
 		CB57E28926C8245200F091ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +87,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB31891326C9288D00B126F6 /* Noto_Sans_KR */ = {
+			isa = PBXGroup;
+			children = (
+				CB31891426C9288D00B126F6 /* NotoSansKR-Light.otf */,
+				CB31891526C9288D00B126F6 /* NotoSansKR-Bold.otf */,
+				CB31891626C9288D00B126F6 /* NotoSansKR-Thin.otf */,
+				CB31891726C9288D00B126F6 /* OFL.txt */,
+				CB31891826C9288D00B126F6 /* NotoSansKR-Black.otf */,
+				CB31891926C9288D00B126F6 /* NotoSansKR-Medium.otf */,
+				CB31891A26C9288D00B126F6 /* NotoSansKR-Regular.otf */,
+			);
+			name = Noto_Sans_KR;
+			path = ../../../../../Downloads/Noto_Sans_KR;
+			sourceTree = "<group>";
+		};
 		CB57E27B26C8245200F091ED = {
 			isa = PBXGroup;
 			children = (
@@ -100,8 +128,12 @@
 				CB57E28726C8245200F091ED /* oasisApp.swift */,
 				CB57E28926C8245200F091ED /* ContentView.swift */,
 				CB57E2B826C8451800F091ED /* SwiftUIView.swift */,
+				CB31894126C9329500B126F6 /* qwerqwre.swift */,
 				CB57E28B26C8245300F091ED /* Assets.xcassets */,
 				CB57E29026C8245300F091ED /* Info.plist */,
+				CB31892226C9297700B126F6 /* NotoSansKR-Regular.otf */,
+				CB31892326C92A1C00B126F6 /* NotoSansKR-Bold.otf */,
+				CB31891326C9288D00B126F6 /* Noto_Sans_KR */,
 				CB57E28D26C8245300F091ED /* Preview Content */,
 			);
 			path = oasis;
@@ -236,6 +268,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB31892C26C92DD300B126F6 /* NotoSansKR-Regular.otf in Resources */,
+				CB31892B26C92DCF00B126F6 /* NotoSansKR-Bold.otf in Resources */,
 				CB57E28F26C8245300F091ED /* Preview Assets.xcassets in Resources */,
 				CB57E28C26C8245300F091ED /* Assets.xcassets in Resources */,
 			);
@@ -265,6 +299,7 @@
 				CB57E28A26C8245200F091ED /* ContentView.swift in Sources */,
 				CB57E28826C8245200F091ED /* oasisApp.swift in Sources */,
 				CB57E2B926C8451800F091ED /* SwiftUIView.swift in Sources */,
+				CB31894226C9329600B126F6 /* qwerqwre.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
