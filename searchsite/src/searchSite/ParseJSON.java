@@ -24,15 +24,21 @@ public class ParseJSON {
         Calendar cal = Calendar.getInstance();
         int year = cal.get(cal.YEAR);
         int month = cal.get(cal.MONTH) + 1 ;
-        int date = cal.get(cal.DATE) ;
+        String monthStr;
+        if(month<10){
+            monthStr = "0"+String.valueOf(month);
+        }else{
+            monthStr = String.valueOf(month);
+        }
+        int date = cal.get(cal.DATE)-1 ;
         String yearStr = String.valueOf(year);
-        String monthStr = String.valueOf(month);
+
         String dateStr = String.valueOf(date);
         String baseDate = yearStr+monthStr+dateStr;
         String pageNo = "1";
-        String numOfRows = "10";
+        String numOfRows = "120";
         String data_type = "JSON";
-        String baseTime = "2000";
+        String baseTime = "2300";
 
         String[] resultArr = new String[2];
         String myurl ="http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst";
@@ -47,13 +53,15 @@ public class ParseJSON {
         urlString.append("&" + URLEncoder.encode("base_time", "UTF-8") + "="+ URLEncoder.encode(baseTime, "UTF-8")); /* 조회하고싶은 시간 AM 02시부터 3시간 단위 */
         urlString.append("&" + URLEncoder.encode("nx", "UTF-8") + "=" + URLEncoder.encode(nx, "UTF-8")); // 경도
         urlString.append("&" + URLEncoder.encode("ny", "UTF-8") + "=" + URLEncoder.encode(ny, "UTF-8")+"&"); // 위도
+        urlString.append("pageNo=1&numOfRows=7&_type=json"); // 위도
+
 
 
         URL url = new URL(urlString.toString());
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setRequestMethod("GET");
         conn.setRequestProperty("Content-type", "application/json");
-        System.out.println(url);
+//        System.out.println(url);
 
         BufferedReader rd;
         if(conn.getResponseCode() >= 200 && conn.getResponseCode() <= 300) {
@@ -69,7 +77,7 @@ public class ParseJSON {
         rd.close();
         conn.disconnect();
         String result= sb.toString();
-        System.out.println(result);
+//        System.out.println(result);
         JSONParser jsonParser = new JSONParser();
         JSONObject jsonObj = (JSONObject) jsonParser.parse(result);
         JSONObject parseResponse = (JSONObject) jsonObj.get("response");
