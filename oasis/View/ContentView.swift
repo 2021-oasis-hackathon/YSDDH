@@ -13,7 +13,6 @@ struct ContentView: View {
     
     
     var body: some View {
-        
         if isStart{
             ZStack{
                 Image(uiImage:UIImage(named: "startpage") ?? UIImage(named: "placeHolderImage")!)
@@ -42,7 +41,6 @@ struct ContentView: View {
             }
             .onAppear(){
                 delayText()
-                
             }
         }
         else{

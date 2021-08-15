@@ -25,8 +25,15 @@ struct MainPageView: View {
 // MARK: Square Layout
                     VStack{
                         HStack{
-                            SquareView("추천 별빛", "별빛따라가 추천하는 여행 코스를 찾아봐요", (UIImage(named:"airplane") ?? UIImage(named: "placeHolderImage"))!)
+                            NavigationLink(
+                                destination: Text("Destination"),
+                                label: {
+                                    SquareView("추천 별빛", "별빛따라가 추천하는 여행 코스를 찾아봐요", (UIImage(named:"airplane") ?? UIImage(named: "placeHolderImage"))!)
+                                    
+                                })
+    
                             SquareView("나의 별빛", "내게 딱 맞는 별빛을 찾으러 가요", (UIImage(named:"starIcon") ?? UIImage(named: "placeHolderImage"))!)
+
                         }
                         
 // MARK: Memory with star Part
@@ -151,9 +158,6 @@ struct SquareView: View {
         .compositingGroup()
         .frame(width: 155, height: 145)
         .shadow(color: Color(hue: 0, saturation: 0, brightness: 0.93).opacity(0.5), radius:2, x:2, y:2)
-        .onTapGesture {
-            print("tapped" + title) // need to change navigation
-        }
     }
 }
 
