@@ -46,7 +46,7 @@ struct ContentView: View {
             }
         }
         else{
-            SwiftUIView()
+            MainPageView()
         }
 
     }

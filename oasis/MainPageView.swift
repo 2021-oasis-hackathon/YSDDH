@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct SwiftUIView: View {
+struct MainPageView: View {
     var body: some View {
         
 // MARK: BackGround Photo Part
@@ -11,6 +11,7 @@ struct SwiftUIView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .ignoresSafeArea()
+                    
 // MARK: Be ready to Start Part
                     HStack(alignment: .top, spacing: nil){
                         HStack{
@@ -27,6 +28,7 @@ struct SwiftUIView: View {
                             SquareView("추천 별빛", "별빛따라가 추천하는 여행 코스를 찾아봐요", (UIImage(named:"airplane") ?? UIImage(named: "placeHolderImage"))!)
                             SquareView("나의 별빛", "내게 딱 맞는 별빛을 찾으러 가요", (UIImage(named:"starIcon") ?? UIImage(named: "placeHolderImage"))!)
                         }
+                        
 // MARK: Memory with star Part
                         ZStack {
                             
@@ -62,6 +64,7 @@ struct SwiftUIView: View {
                             print("tapped third")  // need to change navigation
                         }
                     }
+                    
 // MARK: See Star Now Part
                     HStack(alignment: .top, spacing: nil){
                         HStack{
@@ -154,6 +157,7 @@ struct SquareView: View {
     }
 }
 
+
 struct RectangleBottomBox: View{
     
     private var number: String
@@ -209,7 +213,7 @@ struct RectangleBottomBox: View{
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        SwiftUIView()
+        MainPageView()
     }
 }
 
