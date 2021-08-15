@@ -16,12 +16,12 @@ struct ContentView: View {
         
         if isStart{
             ZStack{
-                Image(uiImage:UIImage(named: "mainPage") ?? UIImage(named: "text.bubble")!)
+                Image(uiImage:UIImage(named: "startpage") ?? UIImage(named: "placeHolderImage")!)
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
                     .aspectRatio(contentMode: .fill)
                 VStack{
-                    Image(uiImage:UIImage(named: "trackingStarLogo") ?? UIImage(named: "text.bubble")!)
+                    Image(uiImage:UIImage(named: "trackingStarLogo") ?? UIImage(named: "placeHolderImage")!)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 110, height: 500)
@@ -34,7 +34,7 @@ struct ContentView: View {
                 }
                 VStack{
                     Spacer()
-                    Image(uiImage:UIImage(named: "YSDDH_Logo") ?? UIImage(named: "text.bubble")!)
+                    Image(uiImage:UIImage(named: "YSDDH_Logo") ?? UIImage(named: "placeHolderImage")!)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 70, height: 100)
