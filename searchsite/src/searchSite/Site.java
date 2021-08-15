@@ -36,19 +36,13 @@ public class Site {
             siteStr[i][8] = ansStr[0];
             siteStr[i][9] = ansStr[1];
         }
-        for(int i = 0 ; i < siteStr.length ; i++){
-            for(int j = 0 ; j <siteStr[1].length ; j++){
-                System.out.print(siteStr[i][j] + "  ");
-            }
-            System.out.println();
-        }
+
         //y1계산
 
         //y2계산
         for(int i = 0 ; i < siteStr.length ; i++){
             int num = Integer.parseInt(siteStr[i][9]);
-            double y2 = Math.exp(num);
-            y2 = Math.sqrt(100);
+            double y2 = Math.exp(-(num/100));
             y2 = -0.5819 * y2 + 1.1581;
             siteStr[i][11] = String.valueOf(y2);
             double score = Double.valueOf(siteStr[i][14]);
@@ -60,22 +54,27 @@ public class Site {
         for(int i = 0 ; i < siteStr.length ; i++){
             double num = Double.valueOf(siteStr[i][4]);
             double y3 = (num-10);
-            y3 = Math.pow(y3,2.0);
-            y3 = y3/10;
-            siteStr[i][12] = String.valueOf(y3);
+            double y33 = Math.pow(y3,2);
+            y33 /= 100;
+            siteStr[i][12] = String.valueOf(y33);
             double score = Double.valueOf(siteStr[i][14]);
-            score += 65*y3;
+            y33*=65;
+//            System.out.println(y33);
+            score+=y33;
             siteStr[i][14] = String.valueOf(score);
         }
         //y4계산
         for(int i = 0 ; i <siteStr.length ; i++){
             int num = Integer.parseInt(siteStr[i][8]);
-            double y4 = Math.exp(num);
-            y4 = -0.1565 * y4 + 1.1565;
-            siteStr[i][13] = String.valueOf(y4);
-            y4*=100;
-            siteStr[i][15] = String.valueOf(y4);
+            double y4 = 1 / Math.exp(num);
+            double y44 = -0.1565 * y4 + 1.1565;
+            siteStr[i][13] = String.valueOf(y44);
+            y44*=100;
+            siteStr[i][15] = String.valueOf(y44);
         }
+
+
+
         for(int i = 0 ; i < siteStr.length ; i++ ){
             double score_1 = Double.valueOf(siteStr[i][14]);
             double score_2 = Double.valueOf(siteStr[i][15]);
@@ -83,6 +82,29 @@ public class Site {
             siteStr[i][16] = String.valueOf(final_score);
         }
         //정렬 comparator 사용하고 싶긴한데 일단 보류
-        
+        for(int i = 0; i < siteStr.length; i++) {
+            for(int j = 0 ; j < siteStr.length - i - 1 ; j++) {
+                double jj = Double.valueOf(siteStr[j][16]);
+                double jjp = Double.valueOf(siteStr[j+1][16]);
+                if(jj < jjp) {
+                    String[] strArr = new String[16];
+                    strArr = siteStr[j+1];
+                    siteStr[j+1] = siteStr[j];
+                    siteStr[j] = strArr;
+                }
+            }
+        }
+
+        //전체 Table 출력
+//        for(int i = 0 ; i < siteStr.length ; i++){
+//            for(int j = 0 ; j <siteStr[1].length ; j++){
+//                System.out.print(siteStr[i][j] + "  ");
+//            }
+//            System.out.println();
+//        }
+        for(int i = 0 ; i < 3 ; i++ ){
+            System.out.println(siteStr[i][1] + " " + siteStr[i][16]);
+        }
+
     }
 }
