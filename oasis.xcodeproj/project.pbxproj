@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB57E28826C8245200F091ED /* oasisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E28726C8245200F091ED /* oasisApp.swift */; };
+		CB57E28A26C8245200F091ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E28926C8245200F091ED /* ContentView.swift */; };
+		CB57E28C26C8245300F091ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB57E28B26C8245300F091ED /* Assets.xcassets */; };
+		CB57E28F26C8245300F091ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB57E28E26C8245300F091ED /* Preview Assets.xcassets */; };
+		CB57E29A26C8245400F091ED /* oasisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E29926C8245400F091ED /* oasisTests.swift */; };
+		CB57E2A526C8245400F091ED /* oasisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E2A426C8245400F091ED /* oasisUITests.swift */; };
+		CB57E2B926C8451800F091ED /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E2B826C8451800F091ED /* SwiftUIView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB57E29626C8245400F091ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB57E27C26C8245200F091ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB57E28326C8245200F091ED;
+			remoteInfo = oasis;
+		};
+		CB57E2A126C8245400F091ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB57E27C26C8245200F091ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB57E28326C8245200F091ED;
+			remoteInfo = oasis;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB57E28426C8245200F091ED /* oasis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oasis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB57E28726C8245200F091ED /* oasisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oasisApp.swift; sourceTree = "<group>"; };
+		CB57E28926C8245200F091ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CB57E28B26C8245300F091ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB57E28E26C8245300F091ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB57E29026C8245300F091ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB57E29526C8245400F091ED /* oasisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oasisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB57E29926C8245400F091ED /* oasisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oasisTests.swift; sourceTree = "<group>"; };
+		CB57E29B26C8245400F091ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB57E2A026C8245400F091ED /* oasisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = oasisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB57E2A426C8245400F091ED /* oasisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oasisUITests.swift; sourceTree = "<group>"; };
+		CB57E2A626C8245400F091ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB57E2B826C8451800F091ED /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB57E28126C8245200F091ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB57E29226C8245400F091ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB57E29D26C8245400F091ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB57E27B26C8245200F091ED = {
+			isa = PBXGroup;
+			children = (
+				CB57E28626C8245200F091ED /* oasis */,
+				CB57E29826C8245400F091ED /* oasisTests */,
+				CB57E2A326C8245400F091ED /* oasisUITests */,
+				CB57E28526C8245200F091ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB57E28526C8245200F091ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB57E28426C8245200F091ED /* oasis.app */,
+				CB57E29526C8245400F091ED /* oasisTests.xctest */,
+				CB57E2A026C8245400F091ED /* oasisUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB57E28626C8245200F091ED /* oasis */ = {
+			isa = PBXGroup;
+			children = (
+				CB57E28726C8245200F091ED /* oasisApp.swift */,
+				CB57E28926C8245200F091ED /* ContentView.swift */,
+				CB57E2B826C8451800F091ED /* SwiftUIView.swift */,
+				CB57E28B26C8245300F091ED /* Assets.xcassets */,
+				CB57E29026C8245300F091ED /* Info.plist */,
+				CB57E28D26C8245300F091ED /* Preview Content */,
+			);
+			path = oasis;
+			sourceTree = "<group>";
+		};
+		CB57E28D26C8245300F091ED /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB57E28E26C8245300F091ED /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB57E29826C8245400F091ED /* oasisTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB57E29926C8245400F091ED /* oasisTests.swift */,
+				CB57E29B26C8245400F091ED /* Info.plist */,
+			);
+			path = oasisTests;
+			sourceTree = "<group>";
+		};
+		CB57E2A326C8245400F091ED /* oasisUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB57E2A426C8245400F091ED /* oasisUITests.swift */,
+				CB57E2A626C8245400F091ED /* Info.plist */,
+			);
+			path = oasisUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB57E28326C8245200F091ED /* oasis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB57E2A926C8245400F091ED /* Build configuration list for PBXNativeTarget "oasis" */;
+			buildPhases = (
+				CB57E28026C8245200F091ED /* Sources */,
+				CB57E28126C8245200F091ED /* Frameworks */,
+				CB57E28226C8245200F091ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = oasis;
+			productName = oasis;
+			productReference = CB57E28426C8245200F091ED /* oasis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB57E29426C8245400F091ED /* oasisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB57E2AC26C8245400F091ED /* Build configuration list for PBXNativeTarget "oasisTests" */;
+			buildPhases = (
+				CB57E29126C8245400F091ED /* Sources */,
+				CB57E29226C8245400F091ED /* Frameworks */,
+				CB57E29326C8245400F091ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB57E29726C8245400F091ED /* PBXTargetDependency */,
+			);
+			name = oasisTests;
+			productName = oasisTests;
+			productReference = CB57E29526C8245400F091ED /* oasisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB57E29F26C8245400F091ED /* oasisUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB57E2AF26C8245400F091ED /* Build configuration list for PBXNativeTarget "oasisUITests" */;
+			buildPhases = (
+				CB57E29C26C8245400F091ED /* Sources */,
+				CB57E29D26C8245400F091ED /* Frameworks */,
+				CB57E29E26C8245400F091ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB57E2A226C8245400F091ED /* PBXTargetDependency */,
+			);
+			name = oasisUITests;
+			productName = oasisUITests;
+			productReference = CB57E2A026C8245400F091ED /* oasisUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB57E27C26C8245200F091ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CB57E28326C8245200F091ED = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					CB57E29426C8245400F091ED = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = CB57E28326C8245200F091ED;
+					};
+					CB57E29F26C8245400F091ED = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = CB57E28326C8245200F091ED;
+					};
+				};
+			};
+			buildConfigurationList = CB57E27F26C8245200F091ED /* Build configuration list for PBXProject "oasis" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB57E27B26C8245200F091ED;
+			productRefGroup = CB57E28526C8245200F091ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB57E28326C8245200F091ED /* oasis */,
+				CB57E29426C8245400F091ED /* oasisTests */,
+				CB57E29F26C8245400F091ED /* oasisUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB57E28226C8245200F091ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB57E28F26C8245300F091ED /* Preview Assets.xcassets in Resources */,
+				CB57E28C26C8245300F091ED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB57E29326C8245400F091ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB57E29E26C8245400F091ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB57E28026C8245200F091ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB57E28A26C8245200F091ED /* ContentView.swift in Sources */,
+				CB57E28826C8245200F091ED /* oasisApp.swift in Sources */,
+				CB57E2B926C8451800F091ED /* SwiftUIView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB57E29126C8245400F091ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB57E29A26C8245400F091ED /* oasisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB57E29C26C8245400F091ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB57E2A526C8245400F091ED /* oasisUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB57E29726C8245400F091ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB57E28326C8245200F091ED /* oasis */;
+			targetProxy = CB57E29626C8245400F091ED /* PBXContainerItemProxy */;
+		};
+		CB57E2A226C8245400F091ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB57E28326C8245200F091ED /* oasis */;
+			targetProxy = CB57E2A126C8245400F091ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CB57E2A726C8245400F091ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB57E2A826C8245400F091ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB57E2AA26C8245400F091ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"oasis/Preview Content\"";
+				DEVELOPMENT_TEAM = BR2KXZ49F3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = oasis/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eungi.oasis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB57E2AB26C8245400F091ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"oasis/Preview Content\"";
+				DEVELOPMENT_TEAM = BR2KXZ49F3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = oasis/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eungi.oasis;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB57E2AD26C8245400F091ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BR2KXZ49F3;
+				INFOPLIST_FILE = oasisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eungi.oasisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/oasis.app/oasis";
+			};
+			name = Debug;
+		};
+		CB57E2AE26C8245400F091ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BR2KXZ49F3;
+				INFOPLIST_FILE = oasisTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eungi.oasisTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/oasis.app/oasis";
+			};
+			name = Release;
+		};
+		CB57E2B026C8245400F091ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BR2KXZ49F3;
+				INFOPLIST_FILE = oasisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eungi.oasisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = oasis;
+			};
+			name = Debug;
+		};
+		CB57E2B126C8245400F091ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BR2KXZ49F3;
+				INFOPLIST_FILE = oasisUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eungi.oasisUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = oasis;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB57E27F26C8245200F091ED /* Build configuration list for PBXProject "oasis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB57E2A726C8245400F091ED /* Debug */,
+				CB57E2A826C8245400F091ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB57E2A926C8245400F091ED /* Build configuration list for PBXNativeTarget "oasis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB57E2AA26C8245400F091ED /* Debug */,
+				CB57E2AB26C8245400F091ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB57E2AC26C8245400F091ED /* Build configuration list for PBXNativeTarget "oasisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB57E2AD26C8245400F091ED /* Debug */,
+				CB57E2AE26C8245400F091ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB57E2AF26C8245400F091ED /* Build configuration list for PBXNativeTarget "oasisUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB57E2B026C8245400F091ED /* Debug */,
+				CB57E2B126C8245400F091ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB57E27C26C8245200F091ED /* Project object */;
+}
