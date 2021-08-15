@@ -46,12 +46,7 @@ struct ContentView: View {
             }
         }
         else{
-            VStack{
-                Text("안녕하세요").font(.system(size: 24))
-                Text("안녕하세요")
-                    .font(.custom("NotoSansKR-Bold", size: 24))
-                
-            }
+            SwiftUIView()
         }
 
     }
