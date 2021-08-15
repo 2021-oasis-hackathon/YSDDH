@@ -8,12 +8,16 @@
 import SwiftUI
 
 struct FindMyStarView: View {
+    @EnvironmentObject var viewRouter: ViewRouter
+    
     var body: some View {
         VStack{
-            Image(uiImage:UIImage(named: "RecommendBack") ?? UIImage(named: "placeHolderImage")!)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .ignoresSafeArea()
+            ZStack{
+                Image(uiImage:UIImage(named: "RecommendBack") ?? UIImage(named: "placeHolderImage")!)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .ignoresSafeArea()
+            }
             Spacer()
             
             
@@ -38,7 +42,7 @@ struct smallSquareView: View {
 
 struct FindMyStarView_Previews: PreviewProvider {
     static var previews: some View {
-        FindMyStarView()
+        FindMyStarView().environmentObject(ViewRouter())
     }
 }
 
