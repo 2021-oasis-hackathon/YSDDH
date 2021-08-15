@@ -28,9 +28,10 @@ struct MainPageView: View {
                     VStack{
                         HStack{
                             Button(action: {
-                                viewRouter.currentPage = .page3
+                                withAnimation {
+                                    viewRouter.currentPage = .page3
+                                }
                             }, label: {
-                                
                                 SquareView("추천 별빛", "별빛따라가 추천하는 여행 코스를 찾아봐요", (UIImage(named:"airplane") ?? UIImage(named: "placeHolderImage"))!)
                             }).buttonStyle(PlainButtonStyle())
                             

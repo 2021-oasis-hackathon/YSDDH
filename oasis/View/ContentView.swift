@@ -19,7 +19,7 @@ struct ContentView: View {
         case .page2:
             MainPageView()
         case .page3:
-            FindMyStarView()
+            FindMyStarView()            
         }
         
         

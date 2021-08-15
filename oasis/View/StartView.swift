@@ -45,7 +45,9 @@ struct StartView: View {
     
     public func delayText(){
         DispatchQueue.main.asyncAfter(deadline: .now()+3){
-            viewRouter.currentPage = .page2
+            withAnimation {
+                viewRouter.currentPage = .page2
+            }
         }
         
     }
