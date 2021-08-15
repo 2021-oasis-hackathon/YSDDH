@@ -9,8 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack{
+            Image(uiImage:UIImage(named: "1234") ?? UIImage(named: "text.bubble")!)
+            Spacer()
+            Spacer()
+        }
+        
+
     }
 }
 
