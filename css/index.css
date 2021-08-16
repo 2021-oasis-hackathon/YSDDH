@@ -242,7 +242,7 @@ justify-content: center;
 }
 .boll{
   width: 5px;
-  margin-right: 5px;
+  margin: 0 5px 0 0;
   height: 5px;
   border-radius: 50%;
   background-color: rgba(116, 106, 229, 1);
