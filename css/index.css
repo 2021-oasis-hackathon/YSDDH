@@ -3,16 +3,23 @@ ul {
   list-style-type: disc;
   text-decoration: none;
 }
-body{
+
+body {
   margin: 0;
+  font-family: 'Gowun Dodum', sans-serif;
 }
-h1{
+
+h1 {
   font-size: 45px;
-line-height: 126%;
-
-letter-spacing: -0.05em;
-
+  line-height: 126%;
+  letter-spacing: -0.05em;
+  margin: 20px 0 20px 0;
 }
+h2{
+  font-size: 18px;
+  color: #9D29B0;
+}
+
 .nav {
   display: flex;
   justify-content: center;
@@ -89,42 +96,66 @@ letter-spacing: -0.05em;
   letter-spacing: -0.05em;
   color: #FFFFFF;
 }
-.contents-section-container{
+
+.contents-section-container {
   width: 1000px;
   height: 900px;
 }
-.contents-type1{
+
+.contents-type1 {
   display: flex;
   height: 100%;
+  justify-content: space-between;
 }
-#first-pic{
+
+#first-pic {
   width: 447px;
 }
-.flexbox{
+
+.flexbox {
   display: flex;
   justify-content: center;
 }
-.content-img{
+
+.content-img {
   display: flex;
   flex-direction: column;
   justify-items: center;
 }
-.content-img div{
-  text-align: center;
-}
-.contents-img-container{
+
+
+.contents-img-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.desc{
-  padding-top: 30px;
-}
-.desc span{
-  font-size: 18px;
-  line-height: 126%;
-letter-spacing: -0.05em
-}
-.contens-desc-container{
 
+.desc {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  align-items: center;
+}
+
+.desc span {
+  font-size: 18px;
+  line-height: 146%;
+  letter-spacing: -0.05em;
+}
+
+.contents-desc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contents-desc-container div{
+  margin-bottom: 60px;
+}
+.under-h1-desc{
+  font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 156%;
+letter-spacing: -0.05em;
+color: #000000;
 }
