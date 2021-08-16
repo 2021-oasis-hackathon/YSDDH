@@ -30,7 +30,7 @@ struct MainPageView: View {
                             //MARK: - FindMyStarView
                             Button(action: {
                                 withAnimation {
-                                    viewRouter.currentPage = .page3
+                                    viewRouter.currentPage = .page4
                                 }
                             }, label: {
                                 SquareView("추천 별빛", "별빛따라가 추천하는 여행 코스를 찾아봐요", (UIImage(named:"airplane") ?? UIImage(named: "placeHolderImage"))!)
@@ -38,7 +38,7 @@ struct MainPageView: View {
                             //MARK: - MyStarView
                             Button(action: {
                                 withAnimation {
-                                    viewRouter.currentPage = .page4
+                                    viewRouter.currentPage = .page3
                                 }
                             }, label: {
                                 SquareView("나의 별빛", "내게 딱 맞는 별빛을 찾으러 가요", (UIImage(named:"starIcon") ?? UIImage(named: "placeHolderImage"))!)
