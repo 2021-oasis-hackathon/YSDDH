@@ -19,9 +19,13 @@ struct ContentView: View {
         case .page2:
             MainPageView()
         case .page3:
-            FindMyStarView()            
-        }
+            FindMyStarView()
+        case .page4:
+            MyStarView()
+        case .page5:
+            MemoryWithStarView()
         
+        }
         
     }
 

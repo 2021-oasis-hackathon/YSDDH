@@ -48,7 +48,37 @@ struct FindMyStarView: View {
                     .frame(width: 327, height: 510)
                     .shadow(radius: 20)
                     .offset(y:65)
-                smallSquareView()
+                
+                HStack{
+                    HStack{
+                        Image(uiImage:UIImage(named: "starImg") ?? UIImage(named: "placeHolderImage")!)
+                        Text("나는").font(.custom("NotoSansKR-Bold", size: 13))
+                    }
+                    Spacer() // go left
+                }
+                .offset(x:60, y: -135)
+                
+                HStack{
+                    smallSquareView("전라남도", UIImage(named: "goBackBtnWhite") ?? UIImage(named: "placeHolderImage")!)
+                    smallSquareView("전라북도", UIImage(named: "goBackBtnWhite") ?? UIImage(named: "placeHolderImage")!)
+                    smallSquareView("광주", UIImage(named: "goBackBtnWhite") ?? UIImage(named: "placeHolderImage")!)
+                }.offset(x: -45.0, y: -75.0)
+                
+                HStack{
+                    HStack{
+                        Image(uiImage:UIImage(named: "starImg") ?? UIImage(named: "placeHolderImage")!)
+                        Text("에 있는").font(.custom("NotoSansKR-Bold", size: 13))
+                    }
+                    Spacer()
+                }
+                .offset(x:60)
+                
+                HStack{
+                    smallSquareView("바다", UIImage(named: "goBackBtnWhite") ?? UIImage(named: "placeHolderImage")!)
+                    smallSquareView("평야", UIImage(named: "goBackBtnWhite") ?? UIImage(named: "placeHolderImage")!)
+                    smallSquareView("도심", UIImage(named: "goBackBtnWhite") ?? UIImage(named: "placeHolderImage")!)
+                    smallSquareView("산", UIImage(named: "goBackBtnWhite") ?? UIImage(named: "placeHolderImage")!)
+                }.offset(x:-20, y:60)
             }
                 
                 
@@ -62,10 +92,29 @@ struct FindMyStarView: View {
 //MARK: - small square view
 
 struct smallSquareView: View {
+    
+    var name: String
+    var img: UIImage
+    
+    init(_ name: String, _ img: UIImage) {
+        self.name = name
+        self.img = img
+    }
+    
     var body: some View{
-        RoundedRectangle(cornerRadius: 10)
-            .fill(Color(hue: 240, saturation: 0, brightness: 0.85, opacity: 0.9))
-        .frame(width: 42, height: 42)
+        
+        VStack{
+            ZStack{
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(Color(hue: 240, saturation: 0, brightness: 0.85, opacity: 0.9))
+                .frame(width: 42, height: 42)
+                Image(uiImage: img)
+                    .frame(width: 24, height: 24)
+            }
+        
+            Text(name)
+                .notoSansFontContent()
+        }
     }
 }
 

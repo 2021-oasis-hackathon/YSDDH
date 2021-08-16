@@ -5,7 +5,7 @@ struct MainPageView: View {
     
     var body: some View {
         
-// MARK: BackGround Photo Part
+        // MARK: BackGround Photo Part
         VStack{
             GeometryReader{ matrics in
                 VStack(){
@@ -14,7 +14,7 @@ struct MainPageView: View {
                     .aspectRatio(contentMode: .fit)
                     .ignoresSafeArea()
                     
-// MARK: Be ready to Start Part
+                    // MARK: Be ready to Start Part
                     HStack(alignment: .top, spacing: nil){
                         HStack{
                             Image(uiImage:UIImage(named: "starImg") ?? UIImage(named: "placeHolderImage")!)
@@ -24,9 +24,10 @@ struct MainPageView: View {
                     }
                     .offset(x:24, y: -20)
                     
-// MARK: Square Layout
+                    // MARK: Square Layout
                     VStack{
                         HStack{
+                            //MARK: - FindMyStarView
                             Button(action: {
                                 withAnimation {
                                     viewRouter.currentPage = .page3
@@ -34,47 +35,58 @@ struct MainPageView: View {
                             }, label: {
                                 SquareView("추천 별빛", "별빛따라가 추천하는 여행 코스를 찾아봐요", (UIImage(named:"airplane") ?? UIImage(named: "placeHolderImage"))!)
                             }).buttonStyle(PlainButtonStyle())
-                            
-                            SquareView("나의 별빛", "내게 딱 맞는 별빛을 찾으러 가요", (UIImage(named:"starIcon") ?? UIImage(named: "placeHolderImage"))!)
+                            //MARK: - MyStarView
+                            Button(action: {
+                                withAnimation {
+                                    viewRouter.currentPage = .page4
+                                }
+                            }, label: {
+                                SquareView("나의 별빛", "내게 딱 맞는 별빛을 찾으러 가요", (UIImage(named:"starIcon") ?? UIImage(named: "placeHolderImage"))!)
+                            }).buttonStyle(PlainButtonStyle())
+
                         }
                         
-// MARK: Memory with star Part
-                        ZStack {
-                            
-                            Text("별과의 추억")
-                                .foregroundColor(.black)
-                                .font(.custom("NotoSansKR", size: 14))
-                                .zIndex(1.0)
-                                .offset(x: -65.5, y: -10)
-                            
-                            Text("별에 있는 나의 추억을 되짚어 보아요")
-                                .tracking(-0.8)
-                                .font(.custom("NotoSansKR", size: 10))
-                                .offset(x:-22, y: 7)
-                                .frame(width: 150, height: 39, alignment: .leading )
-                            
-                            Image(uiImage:UIImage(named: "photo") ?? UIImage(named: "placeHolderImage")!)
-                                .resizable()
-                                .zIndex(1.0)
-                                .frame(width: 50, height: 60)
-                                .offset(x:80, y:0)
+                        // MARK: Memory with star Part
+                        
+                        Button(action: {
+                            withAnimation {
+                                viewRouter.currentPage = .page5
+                            }
+                        }, label: {
+                            ZStack {
+                                Text("별과의 추억")
+                                    .foregroundColor(.black)
+                                    .font(.custom("NotoSansKR", size: 14))
+                                    .zIndex(1.0)
+                                    .offset(x: -65.5, y: -10)
+                                
+                                Text("별에 있는 나의 추억을 되짚어 보아요")
+                                    .tracking(-0.8)
+                                    .font(.custom("NotoSansKR", size: 10))
+                                    .offset(x:-22, y: 7)
+                                    .frame(width: 150, height: 39, alignment: .leading )
+                                
+                                Image(uiImage:UIImage(named: "photo") ?? UIImage(named: "placeHolderImage")!)
+                                    .resizable()
+                                    .zIndex(1.0)
+                                    .frame(width: 50, height: 60)
+                                    .offset(x:80, y:0)
 
-                            
-                            RoundedRectangle(cornerRadius: 20)
-                                .fill(Color(hue: 0, saturation: 0, brightness: 0.93).opacity(0.5))
+                                
+                                RoundedRectangle(cornerRadius: 20)
+                                    .fill(Color(hue: 0, saturation: 0, brightness: 0.93).opacity(0.5))
 
-                            RoundedRectangle(cornerRadius: 20)
-                            .strokeBorder(Color(hue: 0, saturation: 0, brightness: 0.93).opacity(0.5), lineWidth: 0.5)
+                                RoundedRectangle(cornerRadius: 20)
+                                .strokeBorder(Color(hue: 0, saturation: 0, brightness: 0.93).opacity(0.5), lineWidth: 0.5)
 
-                        }
-                        .compositingGroup()
-                        .frame(width: 318, height: 72)
-                        .onTapGesture {
-                            print("tapped third")  // need to change navigation
-                        }
+                            }
+                            .compositingGroup()
+                            .frame(width: 318, height: 72)
+                        }).buttonStyle(PlainButtonStyle())
+                        
                     }
                     
-// MARK: See Star Now Part
+                    // MARK: See Star Now Part
                     HStack(alignment: .top, spacing: nil){
                         HStack{
                             Image(uiImage:UIImage(named: "starImg") ?? UIImage(named: "placeHolderImage")!)

@@ -13,6 +13,8 @@
 		CB31898226C9A82A00B126F6 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31898126C9A82A00B126F6 /* ViewRouter.swift */; };
 		CB31898426C9A89A00B126F6 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31898326C9A89A00B126F6 /* Page.swift */; };
 		CB31898626C9AB5500B126F6 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31898526C9AB5500B126F6 /* StartView.swift */; };
+		CB31898826C9EE5C00B126F6 /* MyStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31898726C9EE5C00B126F6 /* MyStarView.swift */; };
+		CB31898A26C9EE6B00B126F6 /* MemoryWithStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31898926C9EE6B00B126F6 /* MemoryWithStarView.swift */; };
 		CB57E28826C8245200F091ED /* oasisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E28726C8245200F091ED /* oasisApp.swift */; };
 		CB57E28A26C8245200F091ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E28926C8245200F091ED /* ContentView.swift */; };
 		CB57E28C26C8245300F091ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB57E28B26C8245300F091ED /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 		CB31898126C9A82A00B126F6 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		CB31898326C9A89A00B126F6 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
 		CB31898526C9AB5500B126F6 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		CB31898726C9EE5C00B126F6 /* MyStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStarView.swift; sourceTree = "<group>"; };
+		CB31898926C9EE6B00B126F6 /* MemoryWithStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryWithStarView.swift; sourceTree = "<group>"; };
 		CB57E28426C8245200F091ED /* oasis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oasis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB57E28726C8245200F091ED /* oasisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oasisApp.swift; sourceTree = "<group>"; };
 		CB57E28926C8245200F091ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,6 +119,8 @@
 				CB31898526C9AB5500B126F6 /* StartView.swift */,
 				CB57E2B826C8451800F091ED /* MainPageView.swift */,
 				CB31897F26C99C4C00B126F6 /* FindMyStarView.swift */,
+				CB31898726C9EE5C00B126F6 /* MyStarView.swift */,
+				CB31898926C9EE6B00B126F6 /* MemoryWithStarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -318,8 +324,10 @@
 				CB31898426C9A89A00B126F6 /* Page.swift in Sources */,
 				CB57E28826C8245200F091ED /* oasisApp.swift in Sources */,
 				CB57E2B926C8451800F091ED /* MainPageView.swift in Sources */,
+				CB31898A26C9EE6B00B126F6 /* MemoryWithStarView.swift in Sources */,
 				CB31898026C99C4C00B126F6 /* FindMyStarView.swift in Sources */,
 				CB31898626C9AB5500B126F6 /* StartView.swift in Sources */,
+				CB31898826C9EE5C00B126F6 /* MyStarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
