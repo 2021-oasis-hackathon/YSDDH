@@ -1,5 +1,5 @@
 //
-//  MyStar.swift
+//  FindMyStarResultView.swift
 //  oasis
 //
 //  Created by 최은기 on 2021/08/16.
@@ -7,27 +7,31 @@
 
 import SwiftUI
 
-struct MyStarView: View {
+struct FindMyStarResultView: View {
     
     @EnvironmentObject var viewRouter: ViewRouter
     
     var body: some View {
         ZStack{
-            VStack(alignment:.leading){
-                Image(uiImage:UIImage(named: "MyStarViewBack") ?? UIImage(named: "placeHolderImage")!)
+            //MARK: - Background Image
+            VStack{
+                Image(uiImage:UIImage(named: "RecommendResultBack") ?? UIImage(named: "placeHolderImage")!)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .ignoresSafeArea()
                 Spacer()
-
+                
             }
+            
+            
+            //MARK: - go Back Button
             VStack(alignment:.leading){
                 Spacer()
                 HStack{
                     VStack(alignment: .leading){
                             Button(action: {
                                 withAnimation {
-                                    viewRouter.currentPage = .page2
+                                    viewRouter.currentPage = .page3
                                 }
                             }, label: {
                                 Image(uiImage:UIImage(named: "goBackBtnWhite") ?? UIImage(named: "placeHolderImage")!)
@@ -42,26 +46,19 @@ struct MyStarView: View {
                 }.offset(x:30, y:10)
             }
             
-            HStack{
-                Image(uiImage:UIImage(named: "starImg") ?? UIImage(named: "placeHolderImage")!)
-                Text("나는").font(.custom("NotoSansKR-Bold", size: 16))
-                Spacer()
-            }
-            .offset(x: 15,  y:-30)
-            .padding()
-            
-            HStack{
-                
-            }
-            
-
         }
-
     }
 }
 
-struct MyStar_Previews: PreviewProvider {
+struct RoundRectangleView: View{
+    var body: some View{
+        Text("!")
+    }
+}
+
+
+struct FindMyStarResultView_Previews: PreviewProvider {
     static var previews: some View {
-        MyStarView().environmentObject(ViewRouter())
+        FindMyStarResultView().environmentObject(ViewRouter())
     }
 }

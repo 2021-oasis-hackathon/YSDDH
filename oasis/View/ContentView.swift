@@ -21,8 +21,7 @@ struct ContentView: View {
         case .page3:
             FindMyStarView()
         case .page3_1:
-            FindMyStarView()
-            
+            FindMyStarResultView()
         case .page4:
             MyStarView()
         case .page5:
@@ -32,6 +31,13 @@ struct ContentView: View {
         
     }
 
+}
+
+
+extension UIScreen{
+   static let screenWidth = UIScreen.main.bounds.size.width
+   static let screenHeight = UIScreen.main.bounds.size.height
+   static let screenSize = UIScreen.main.bounds.size
 }
 
 

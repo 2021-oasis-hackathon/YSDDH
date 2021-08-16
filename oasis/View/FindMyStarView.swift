@@ -48,7 +48,7 @@ struct FindMyStarView: View {
                 //MARK: - Main Round Rectangle
                 RoundedRectangle(cornerRadius: 20)
                     .fill(Color(white: 1.0))
-                    .frame(width: 327, height: 510)
+                    .frame(width: UIScreen.screenWidth * 0.872 , height: UIScreen.screenHeight * 0.6281)
                     .shadow(radius: 20)
                     .offset(y:65)
                 
@@ -103,26 +103,26 @@ struct FindMyStarView: View {
                 .offset(x:82, y:180)
                 
                 //MARK: - go to Result Page
-                Button(action: {
-                    withAnimation {
-                        viewRouter.currentPage = .page3_1
-                    }
-                }, label: {
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 20)
-                            .fill(Color(red: 0.45, green: 0.42, blue: 0.9))
-                            .frame(width: 250, height: 50, alignment: .center)
-                        Text("별빛 찾으러 가자")
-                            .font(.custom("NotoSansKR-Regular", size: 13))
-                            .foregroundColor(.white)
-                    }.offset(y:250)
-                })
+                VStack{
+                    Spacer()
+                    Button(action: {
+                        withAnimation {
+                            viewRouter.currentPage = .page3_1
+                        }
+                    }, label: {
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(Color(red: 0.45, green: 0.42, blue: 0.9))
+                                .frame(width: UIScreen.screenWidth * 0.6667, height: UIScreen.screenHeight * 0.062, alignment: .center)
+                            Text("별빛 찾으러 가자")
+                                .font(.custom("NotoSansKR-Regular", size: 13))
+                                .foregroundColor(.white)
+                        }
+                    })
+                }.offset(y:-90)
                 
                     
             }
-                
-                
-            
 
         }
     }
