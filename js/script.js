@@ -1,10 +1,10 @@
 $(function(){
   $(window).scroll(function(){
   var navbar =$(document).height() - $(window).height() - $(window).scrollTop();
-  console.log(navbar);
+  // console.log(navbar);
   var $tip = $('.change-color');
-  var ki = $('.hello').height()+300;
-  // console.log(ki);
+  var ki = $("#hi").position().top +250;
+  console.log(ki);
   if(navbar < ki){
       $tip.addClass('activated');
   }else{
