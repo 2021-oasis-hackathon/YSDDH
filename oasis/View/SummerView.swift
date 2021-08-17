@@ -74,7 +74,6 @@ struct SummerView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 12, height: 20)
-                                    .offset(x:-20)
                             }).padding()
                             
                         }
