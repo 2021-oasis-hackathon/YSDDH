@@ -102,7 +102,7 @@ struct WinterView: View {
                     })
             
             
-            SummerGalleryView()
+            WinterGallaryView()
                 .animation(.spring())
                 .offset(y: self.viewState.height)
                 .ignoresSafeArea()
