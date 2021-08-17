@@ -13,15 +13,15 @@ $(function(){
 })
 })
 
-var top1 = $('#one').top;
-var top2 = $('#two').top;
-var top3 = $('#three').top;
-var top4 = $('#four').top;
+var top1 = document.querySelector('#one').offsetTop;
+var top2 = document.querySelector('#two').offsetTop;
+var top3 = document.querySelector('#three').offsetTop;
+var top4 = document.querySelector('#four').offsetTop;
 
 var goto1 = document.querySelector('#go1');
-var goto2 = document.getElementById('go2');
-var goto3 = document.getElementById('go3');
-var goto4 = document.getElementById('go4');
+var goto2 = document.querySelector('#go2');
+var goto3 = document.querySelector('#go3');
+var goto4 = document.querySelector('#go4');
 
 function moveScrollTo(par){
   window.scrollTo({top:par, behavior:'smooth'})
