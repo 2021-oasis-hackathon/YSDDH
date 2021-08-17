@@ -16,6 +16,8 @@
 		CB31898826C9EE5C00B126F6 /* MyStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31898726C9EE5C00B126F6 /* MyStarView.swift */; };
 		CB31898A26C9EE6B00B126F6 /* MemoryWithStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31898926C9EE6B00B126F6 /* MemoryWithStarView.swift */; };
 		CB31898C26C9FD0500B126F6 /* FindMyStarResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31898B26C9FD0400B126F6 /* FindMyStarResultView.swift */; };
+		CB449F3026CBEF8F00AC9BD9 /* GallaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB449F2F26CBEF8F00AC9BD9 /* GallaryView.swift */; };
+		CB449F3226CBF1F600AC9BD9 /* MemoryWithStarGallary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB449F3126CBF1F600AC9BD9 /* MemoryWithStarGallary.swift */; };
 		CB57E28826C8245200F091ED /* oasisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E28726C8245200F091ED /* oasisApp.swift */; };
 		CB57E28A26C8245200F091ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E28926C8245200F091ED /* ContentView.swift */; };
 		CB57E28C26C8245300F091ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB57E28B26C8245300F091ED /* Assets.xcassets */; };
@@ -60,6 +62,8 @@
 		CB31898726C9EE5C00B126F6 /* MyStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStarView.swift; sourceTree = "<group>"; };
 		CB31898926C9EE6B00B126F6 /* MemoryWithStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryWithStarView.swift; sourceTree = "<group>"; };
 		CB31898B26C9FD0400B126F6 /* FindMyStarResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyStarResultView.swift; sourceTree = "<group>"; };
+		CB449F2F26CBEF8F00AC9BD9 /* GallaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryView.swift; sourceTree = "<group>"; };
+		CB449F3126CBF1F600AC9BD9 /* MemoryWithStarGallary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryWithStarGallary.swift; sourceTree = "<group>"; };
 		CB57E28426C8245200F091ED /* oasis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oasis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB57E28726C8245200F091ED /* oasisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oasisApp.swift; sourceTree = "<group>"; };
 		CB57E28926C8245200F091ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				CB31898B26C9FD0400B126F6 /* FindMyStarResultView.swift */,
 				CB31898726C9EE5C00B126F6 /* MyStarView.swift */,
 				CB31898926C9EE6B00B126F6 /* MemoryWithStarView.swift */,
+				CB449F3126CBF1F600AC9BD9 /* MemoryWithStarGallary.swift */,
+				CB449F2F26CBEF8F00AC9BD9 /* GallaryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -329,6 +335,7 @@
 				CB57E28A26C8245200F091ED /* ContentView.swift in Sources */,
 				CB31898426C9A89A00B126F6 /* Page.swift in Sources */,
 				CB57E28826C8245200F091ED /* oasisApp.swift in Sources */,
+				CB449F3026CBEF8F00AC9BD9 /* GallaryView.swift in Sources */,
 				CBEC7CDB26CBA10F0066DEE4 /* SeasonPage.swift in Sources */,
 				CB57E2B926C8451800F091ED /* MainPageView.swift in Sources */,
 				CB31898A26C9EE6B00B126F6 /* MemoryWithStarView.swift in Sources */,
@@ -336,6 +343,7 @@
 				CB31898626C9AB5500B126F6 /* StartView.swift in Sources */,
 				CB31898C26C9FD0500B126F6 /* FindMyStarResultView.swift in Sources */,
 				CB31898826C9EE5C00B126F6 /* MyStarView.swift in Sources */,
+				CB449F3226CBF1F600AC9BD9 /* MemoryWithStarGallary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

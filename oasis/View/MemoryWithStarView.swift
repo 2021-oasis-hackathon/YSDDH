@@ -10,7 +10,6 @@ import SwiftUI
 struct MemoryWithStarView: View {
     
     @EnvironmentObject var viewRouter: ViewRouter
-    @State var isAnimating = false
 //    var season: String = "spring"
     
     var body: some View {
@@ -85,7 +84,16 @@ struct MemoryWithStarView: View {
                                 .foregroundColor(.white)
                                 .tracking(-1)
                                 .font(.custom("NotoSansKR-Regular", size: 20))
-                            Image(uiImage:UIImage(named: "goDownBtn") ?? UIImage(named: "placeHolderImage")!)
+                            Button(action: {
+                                withAnimation {
+                                    viewRouter.currentPage = .page5_a
+                                }
+                            }, label: {
+                                Image(uiImage:UIImage(named: "goDownBtn") ?? UIImage(named: "placeHolderImage")!)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 37, height: 12)
+                            })
                         }
                     }
                     .offset(y:-90)
