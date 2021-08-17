@@ -18,7 +18,7 @@ var top2 = $('#two').top;
 var top3 = $('#three').top;
 var top4 = $('#four').top;
 
-var goto1 = document.getElementById('go1');
+var goto1 = document.querySelector('#go1');
 var goto2 = document.getElementById('go2');
 var goto3 = document.getElementById('go3');
 var goto4 = document.getElementById('go4');
