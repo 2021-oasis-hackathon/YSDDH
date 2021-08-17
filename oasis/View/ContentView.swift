@@ -26,7 +26,12 @@ struct ContentView: View {
             MyStarView()
         case .page5:
             MemoryWithStarView()
-
+        case .page6:
+            SummerView()
+        case .page7:
+            FallView()
+        case .page8:
+            WinterView()
         }
         
     }

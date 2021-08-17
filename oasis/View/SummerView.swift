@@ -1,13 +1,13 @@
 //
-//  MemoryWithStar.swift
+//  SummerView.swift
 //  oasis
 //
-//  Created by 최은기 on 2021/08/16.
+//  Created by 최은기 on 2021/08/18.
 //
 
 import SwiftUI
 
-struct MemoryWithStarView: View {
+struct SummerView: View {
     
     @EnvironmentObject var viewRouter: ViewRouter
     @State var viewState = CGSize(width: 0, height: 800)
@@ -15,6 +15,7 @@ struct MemoryWithStarView: View {
     var body: some View {
         
         ZStack{
+            //MARK: - Background
             Image(uiImage:UIImage(named: "SpringBackgroundImage") ?? UIImage(named: "placeHolderImage")!)
                 .ignoresSafeArea()
                 .overlay(
@@ -38,7 +39,7 @@ struct MemoryWithStarView: View {
                         }.offset(x:30, y:60)
                         
                         VStack(alignment: .center){
-                            Text("봄의 대삼각형")
+                            Text("여름의 대삼각형")
                                 .foregroundColor(.white)
                                 .tracking(-1)
                                 .font(.custom("NotoSansKR-Regular", size: 20))
@@ -47,7 +48,7 @@ struct MemoryWithStarView: View {
                         }
                         
                         //MARK: - Image
-                        Image(uiImage:UIImage(named: "springImage") ?? UIImage(named: "placeHolderImage")!)
+                        Image(uiImage:UIImage(named: "summerImage") ?? UIImage(named: "placeHolderImage")!)
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: UIScreen.screenWidth*0.6493, height: UIScreen.screenHeight*0.2451, alignment: .center)
@@ -55,7 +56,7 @@ struct MemoryWithStarView: View {
                         HStack{
                             Button(action: {
                                 withAnimation {
-                                    viewRouter.currentPage = .page8
+                                    viewRouter.currentPage = .page5
                                 }
                             }, label: {
                                 Image(uiImage:UIImage(named: "goBackBtnWhite") ?? UIImage(named: "placeHolderImage")!)
@@ -67,7 +68,7 @@ struct MemoryWithStarView: View {
                             Spacer()
                             Button(action: {
                                 withAnimation {
-                                    viewRouter.currentPage = .page6
+                                    viewRouter.currentPage = .page7
                                 }
                             }, label: {
                                 Image(uiImage:UIImage(named: "goBackBtnWhiteReverse") ?? UIImage(named: "placeHolderImage")!)
@@ -101,7 +102,7 @@ struct MemoryWithStarView: View {
                     })
             
             
-            SpringGallaryView()
+            SummerGalleryView()
                 .animation(.spring())
                 .offset(y: self.viewState.height)
                 .ignoresSafeArea()
@@ -128,8 +129,9 @@ struct MemoryWithStarView: View {
     }
 }
 
-struct MemoryWithStar_Previews: PreviewProvider {
+
+struct SummerView_Previews: PreviewProvider {
     static var previews: some View {
-        MemoryWithStarView().environmentObject(ViewRouter())
+        SummerView().environmentObject(ViewRouter())
     }
 }
