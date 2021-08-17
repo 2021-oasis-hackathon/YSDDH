@@ -18,16 +18,11 @@ import java.util.Calendar;
 
 public class elevation {
     public static void main(String[] args) throws IOException, ParseException {
-        weather();
     }
-    public static void weather() throws IOException, ParseException {
+    public static double elevation(String we,String ky) throws IOException, ParseException {
 
-        //습도, 구름의 양 받을 array
-        String[] resultArr = new String[2];
         String myurl ="https://maps.googleapis.com/maps/api/elevation/json?locations=";
         String key = "AIzaSyBY8mSm8eMWweBsHJcgYUSUzKNnwFR_MhI";
-        String we = "35.87646";
-        String ky = "127.497";
 
         //URL 제작
         StringBuilder urlString = new StringBuilder(myurl);
@@ -35,8 +30,6 @@ public class elevation {
         urlString.append(ky);
         urlString.append("&" + URLEncoder.encode("key", "UTF-8") + "=" + URLEncoder.encode(key, "UTF-8"));
 
-
-        System.out.println(urlString);
         //URL바탕으로 서버로부터 json data 가져옴
         URL url = new URL(urlString.toString());
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -57,21 +50,12 @@ public class elevation {
         rd.close();
         conn.disconnect();
         String result= sb.toString();
-        System.out.println(result);
 
-//        JSON data = result로부터 안쪽의 item까지 진입
         JSONParser jsonParser = new JSONParser();
         JSONObject jsonObj = (JSONObject) jsonParser.parse(result);
         JSONArray resultArray = (JSONArray) jsonObj.get("results");
         JSONObject elevationObject = (JSONObject) resultArray.get(0);
-        System.out.println(elevationObject.get("elevation"));
-
-        JSONObject parseResult = (JSONObject) jsonObj.get("result");
-        JSONObject parseElevation = (JSONObject) parseResult.get("elevation");
-
-
-        JSONArray parseItem = (JSONArray) parseElevation.get("item");
-
+        return Double.parseDouble(elevationObject.get("elevation").toString());
 
     }
 }
