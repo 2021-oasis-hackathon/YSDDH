@@ -2,11 +2,14 @@ import SwiftUI
 
 struct MainPageView: View {
     @EnvironmentObject var viewRouter: ViewRouter
+    @State var helperState = false
+    
+    
     
     var body: some View {
         
         // MARK: BackGround Photo Part
-        VStack{
+        ZStack{
             GeometryReader{ matrics in
                 VStack(){
                 Image(uiImage:UIImage(named: "mainpage-header") ?? UIImage(named: "placeHolderImage")!)
@@ -88,24 +91,35 @@ struct MainPageView: View {
                     
                     // MARK: See Star Now Part
                     HStack(alignment: .top, spacing: nil){
-                        HStack{
-                            Image(uiImage:UIImage(named: "starImg") ?? UIImage(named: "placeHolderImage")!)
-                            Text("지금 별 보러 가요").font(.custom("NotoSansKR-Bold", size: 13))
-                            Spacer()
-                            //Rectangle 45
-                            ZStack {
-                                RoundedRectangle(cornerRadius: 20)
-                                    .strokeBorder(Color(hue: 245, saturation: 0.54, brightness: 0.9).opacity(0.5))
-                                    .offset(x: -40)
-                                Text("전라남도, 여수")
-                                    .font(.custom("NotoSansKR", size: 10))
-                                    .offset(x: -39, y:0.5)
+                        ZStack{
+                            HStack{
+                                Image(uiImage:UIImage(named: "starImg") ?? UIImage(named: "placeHolderImage")!)
+                                Text("지금 별 보러 가요").font(.custom("NotoSansKR-Bold", size: 13))
+                                Button(action: {
+                                    helperState.toggle()
+                                }, label: {
+                                    Circle()
+                                        .strokeBorder(Color(hue: 245, saturation: 0.54, brightness: 0.9) , lineWidth: 1)
+                                        .frame(width: 14, height: 14)
+                                        .foregroundColor(.white)
+                                        .overlay(Text("?")
+                                                    .font(.custom("NotoSansKR-Bold", size: 9)))
+                                }).buttonStyle(PlainButtonStyle())
+                                Spacer()
+                                //Rectangle 45
+                                ZStack {
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .strokeBorder(Color(hue: 245, saturation: 0.54, brightness: 0.9).opacity(0.5))
+                                        .offset(x: -40)
+                                    Text("전라남도, 여수")
+                                        .font(.custom("NotoSansKR", size: 10))
+                                        .offset(x: -39, y:0.5)
+                                }
+                                .frame(width: 75, height: 14)
+                                
                             }
-                            .frame(width: 75, height: 14)
-                            
-                    
+                            .offset(x:24, y: 15)
                         }
-                        .offset(x:24, y: 15)
 
                         Spacer()
                     }
@@ -122,7 +136,16 @@ struct MainPageView: View {
                 Spacer()
                 }
             }
+            if (helperState == true){
+                Image("mainPageHelper").offset(x: 40, y: 168)
+            }
             
+            
+        }
+        .onTapGesture {
+            if (helperState == true){
+                helperState = false
+            }
         }
     }
 }
@@ -236,6 +259,7 @@ struct SwiftUIView_Previews: PreviewProvider {
 }
 
 
+    
 extension Text{
     func notoSansFontTitle()-> Text{
         self
