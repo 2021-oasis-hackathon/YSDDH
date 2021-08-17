@@ -13,7 +13,8 @@ struct MemoryWithStarView: View {
 //    var season: String = "spring"
     
     var body: some View {
-        Color(red: 0.1, green: 0.12, blue: 0.26)
+        
+        Image(uiImage:UIImage(named: "SpringBackgroundImage") ?? UIImage(named: "placeHolderImage")!)
             .ignoresSafeArea()
             .overlay(
                 ZStack{
@@ -33,16 +34,22 @@ struct MemoryWithStarView: View {
                         }
                         Spacer()
                         
-                    }.offset(x:30, y:10)
+                    }.offset(x:30, y:60)
+                    
+                    VStack(alignment: .center){
+                        Text("봄철 대삼각형")
+                            .foregroundColor(.white)
+                            .font(.custom("NotoSansKR-Regular", size: 20))
+                            .offset(y:UIScreen.screenHeight * 0.196)
+                        Spacer()
+                    }
+                    
                     Image(uiImage:UIImage(named: "springImage") ?? UIImage(named: "placeHolderImage")!)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: UIScreen.screenWidth*0.6493, height: UIScreen.screenHeight*0.2451, alignment: .center)
-                    
-                    
                 })
 
-        
     }
 }
 
