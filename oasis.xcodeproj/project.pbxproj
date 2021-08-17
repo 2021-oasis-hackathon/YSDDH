@@ -17,7 +17,6 @@
 		CB31898A26C9EE6B00B126F6 /* MemoryWithStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31898926C9EE6B00B126F6 /* MemoryWithStarView.swift */; };
 		CB31898C26C9FD0500B126F6 /* FindMyStarResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB31898B26C9FD0400B126F6 /* FindMyStarResultView.swift */; };
 		CB449F3026CBEF8F00AC9BD9 /* SpringGallaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB449F2F26CBEF8F00AC9BD9 /* SpringGallaryView.swift */; };
-		CB449F3226CBF1F600AC9BD9 /* MemoryWithStarGallary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB449F3126CBF1F600AC9BD9 /* MemoryWithStarGallary.swift */; };
 		CB57E28826C8245200F091ED /* oasisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E28726C8245200F091ED /* oasisApp.swift */; };
 		CB57E28A26C8245200F091ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E28926C8245200F091ED /* ContentView.swift */; };
 		CB57E28C26C8245300F091ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB57E28B26C8245300F091ED /* Assets.xcassets */; };
@@ -28,7 +27,9 @@
 		CBE7D0BA26CC2E3B006F33E3 /* SummerGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7D0B926CC2E3B006F33E3 /* SummerGalleryView.swift */; };
 		CBE7D0BC26CC2EF6006F33E3 /* FallGallaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7D0BB26CC2EF6006F33E3 /* FallGallaryView.swift */; };
 		CBE7D0BE26CC2F5D006F33E3 /* WinterGallaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7D0BD26CC2F5D006F33E3 /* WinterGallaryView.swift */; };
-		CBEC7CDB26CBA10F0066DEE4 /* SeasonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEC7CDA26CBA10F0066DEE4 /* SeasonPage.swift */; };
+		CBE7D0C026CC2FE4006F33E3 /* SummerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7D0BF26CC2FE4006F33E3 /* SummerView.swift */; };
+		CBE7D0C226CC303E006F33E3 /* FallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7D0C126CC303E006F33E3 /* FallView.swift */; };
+		CBE7D0C426CC3127006F33E3 /* WinterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7D0C326CC3127006F33E3 /* WinterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,6 @@
 		CB31898926C9EE6B00B126F6 /* MemoryWithStarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryWithStarView.swift; sourceTree = "<group>"; };
 		CB31898B26C9FD0400B126F6 /* FindMyStarResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyStarResultView.swift; sourceTree = "<group>"; };
 		CB449F2F26CBEF8F00AC9BD9 /* SpringGallaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringGallaryView.swift; sourceTree = "<group>"; };
-		CB449F3126CBF1F600AC9BD9 /* MemoryWithStarGallary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryWithStarGallary.swift; sourceTree = "<group>"; };
 		CB57E28426C8245200F091ED /* oasis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oasis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB57E28726C8245200F091ED /* oasisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oasisApp.swift; sourceTree = "<group>"; };
 		CB57E28926C8245200F091ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,7 +83,9 @@
 		CBE7D0B926CC2E3B006F33E3 /* SummerGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerGalleryView.swift; sourceTree = "<group>"; };
 		CBE7D0BB26CC2EF6006F33E3 /* FallGallaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallGallaryView.swift; sourceTree = "<group>"; };
 		CBE7D0BD26CC2F5D006F33E3 /* WinterGallaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinterGallaryView.swift; sourceTree = "<group>"; };
-		CBEC7CDA26CBA10F0066DEE4 /* SeasonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonPage.swift; sourceTree = "<group>"; };
+		CBE7D0BF26CC2FE4006F33E3 /* SummerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerView.swift; sourceTree = "<group>"; };
+		CBE7D0C126CC303E006F33E3 /* FallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallView.swift; sourceTree = "<group>"; };
+		CBE7D0C326CC3127006F33E3 /* WinterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +138,9 @@
 				CB31898B26C9FD0400B126F6 /* FindMyStarResultView.swift */,
 				CB31898726C9EE5C00B126F6 /* MyStarView.swift */,
 				CB31898926C9EE6B00B126F6 /* MemoryWithStarView.swift */,
-				CB449F3126CBF1F600AC9BD9 /* MemoryWithStarGallary.swift */,
+				CBE7D0BF26CC2FE4006F33E3 /* SummerView.swift */,
+				CBE7D0C126CC303E006F33E3 /* FallView.swift */,
+				CBE7D0C326CC3127006F33E3 /* WinterView.swift */,
 				CBE7D0B826CC2DBC006F33E3 /* GallaryView */,
 			);
 			path = View;
@@ -169,7 +173,6 @@
 				CB31897C26C99B7500B126F6 /* View */,
 				CB31898126C9A82A00B126F6 /* ViewRouter.swift */,
 				CB31898326C9A89A00B126F6 /* Page.swift */,
-				CBEC7CDA26CBA10F0066DEE4 /* SeasonPage.swift */,
 				CB57E28B26C8245300F091ED /* Assets.xcassets */,
 				CB57E29026C8245300F091ED /* Info.plist */,
 				CB31892226C9297700B126F6 /* NotoSansKR-Regular.otf */,
@@ -351,19 +354,20 @@
 				CB31898226C9A82A00B126F6 /* ViewRouter.swift in Sources */,
 				CB57E28A26C8245200F091ED /* ContentView.swift in Sources */,
 				CBE7D0BE26CC2F5D006F33E3 /* WinterGallaryView.swift in Sources */,
+				CBE7D0C226CC303E006F33E3 /* FallView.swift in Sources */,
 				CB31898426C9A89A00B126F6 /* Page.swift in Sources */,
 				CB57E28826C8245200F091ED /* oasisApp.swift in Sources */,
 				CB449F3026CBEF8F00AC9BD9 /* SpringGallaryView.swift in Sources */,
-				CBEC7CDB26CBA10F0066DEE4 /* SeasonPage.swift in Sources */,
 				CB57E2B926C8451800F091ED /* MainPageView.swift in Sources */,
 				CB31898A26C9EE6B00B126F6 /* MemoryWithStarView.swift in Sources */,
 				CBE7D0BA26CC2E3B006F33E3 /* SummerGalleryView.swift in Sources */,
 				CB31898026C99C4C00B126F6 /* FindMyStarView.swift in Sources */,
 				CB31898626C9AB5500B126F6 /* StartView.swift in Sources */,
 				CB31898C26C9FD0500B126F6 /* FindMyStarResultView.swift in Sources */,
+				CBE7D0C426CC3127006F33E3 /* WinterView.swift in Sources */,
 				CBE7D0BC26CC2EF6006F33E3 /* FallGallaryView.swift in Sources */,
 				CB31898826C9EE5C00B126F6 /* MyStarView.swift in Sources */,
-				CB449F3226CBF1F600AC9BD9 /* MemoryWithStarGallary.swift in Sources */,
+				CBE7D0C026CC2FE4006F33E3 /* SummerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
