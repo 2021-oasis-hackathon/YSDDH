@@ -1,3 +1,4 @@
+# README.md
 # Searching Algorithm
 
 ### 전라도의 지역 중, 별이 가장 잘 보이는 장소를 선정한다. 
