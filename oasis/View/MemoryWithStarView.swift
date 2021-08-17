@@ -10,8 +10,8 @@ import SwiftUI
 struct MemoryWithStarView: View {
     
     @EnvironmentObject var viewRouter: ViewRouter
-    @State var viewState = CGSize.zero
-
+    @State var viewState = CGSize(width: 0, height: 800)
+    
     var body: some View {
         
         ZStack{
@@ -101,7 +101,7 @@ struct MemoryWithStarView: View {
                     })
             
             
-            RoundedRectangle(cornerRadius: 10)
+            Image(uiImage:UIImage(named: "SpringBackgroundImage") ?? UIImage(named: "placeHolderImage")!)
                 .animation(.spring())
                 .offset(y: self.viewState.height)
                 .ignoresSafeArea()
