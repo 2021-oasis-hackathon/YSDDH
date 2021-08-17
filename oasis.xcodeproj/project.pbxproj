@@ -23,6 +23,7 @@
 		CB57E29A26C8245400F091ED /* oasisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E29926C8245400F091ED /* oasisTests.swift */; };
 		CB57E2A526C8245400F091ED /* oasisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E2A426C8245400F091ED /* oasisUITests.swift */; };
 		CB57E2B926C8451800F091ED /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB57E2B826C8451800F091ED /* MainPageView.swift */; };
+		CBEC7CDB26CBA10F0066DEE4 /* SeasonPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEC7CDA26CBA10F0066DEE4 /* SeasonPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		CB57E2A426C8245400F091ED /* oasisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = oasisUITests.swift; sourceTree = "<group>"; };
 		CB57E2A626C8245400F091ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB57E2B826C8451800F091ED /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; tabWidth = 4; };
+		CBEC7CDA26CBA10F0066DEE4 /* SeasonPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				CB31897C26C99B7500B126F6 /* View */,
 				CB31898126C9A82A00B126F6 /* ViewRouter.swift */,
 				CB31898326C9A89A00B126F6 /* Page.swift */,
+				CBEC7CDA26CBA10F0066DEE4 /* SeasonPage.swift */,
 				CB57E28B26C8245300F091ED /* Assets.xcassets */,
 				CB57E29026C8245300F091ED /* Info.plist */,
 				CB31892226C9297700B126F6 /* NotoSansKR-Regular.otf */,
@@ -326,6 +329,7 @@
 				CB57E28A26C8245200F091ED /* ContentView.swift in Sources */,
 				CB31898426C9A89A00B126F6 /* Page.swift in Sources */,
 				CB57E28826C8245200F091ED /* oasisApp.swift in Sources */,
+				CBEC7CDB26CBA10F0066DEE4 /* SeasonPage.swift in Sources */,
 				CB57E2B926C8451800F091ED /* MainPageView.swift in Sources */,
 				CB31898A26C9EE6B00B126F6 /* MemoryWithStarView.swift in Sources */,
 				CB31898026C99C4C00B126F6 /* FindMyStarView.swift in Sources */,

@@ -53,9 +53,11 @@ struct MyStarView: View {
             
                 ScrollView(.horizontal){
                     HStack(alignment:.center){
-                        ForEach(0..<5){ i in
-                            CardView("지승이 천문대", )
-                        }
+                        CardView("지승이 천문대", ["전남", "산지"])
+                        CardView("지승이 천문대", ["전남", "산지"])
+                        CardView("지승이 천문대", ["전남", "산지"])
+                        CardView("지승이 천문대", ["전남", "산지"])
+                        CardView("지승이 천문대", ["전남", "산지"])
                     }.padding()
 
                 }.offset(y:150)
@@ -91,6 +93,7 @@ struct CardView: View{
     
     init(_ title: String, _ tags: [String]){
         self.title = title
+        
         self.tags = tags
     }
     
