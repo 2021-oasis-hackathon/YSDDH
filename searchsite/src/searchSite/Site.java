@@ -3,6 +3,8 @@ import java.util.ArrayList;
 import java.io.IOException;
 import org.json.simple.parser.ParseException;
 
+import static searchSite.elevation.calculate;
+
 public class Site {
     public static void main(String[] args){
         //nx6 ny7 구름8 습도9 y1-10 y2-11 y3-12 y4-13 고유점수14 상대점수15 점수합산16
@@ -35,8 +37,14 @@ public class Site {
             siteStr[i][9] = ansStr[1];
         }
 
-        //y1계산
+        //y1계산 -> 정적 데이터로 만들수 있는 지형에 관한 변수
+        for(int i = 0 ; i < siteStr.length ; i++){
+            double score = Double.valueOf(siteStr[i][14]);
+            double y1 = calculate(siteStr[i][2],siteStr[i][3]);
+            score += 30*y1;
+            siteStr[i][14] = String.valueOf(score);
 
+        }
         //y2계산 siteStr[i][9]=습도
         for(int i = 0 ; i < siteStr.length ; i++){
             int num = Integer.parseInt(siteStr[i][9]);
