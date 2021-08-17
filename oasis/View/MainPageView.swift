@@ -99,7 +99,7 @@ struct MainPageView: View {
                                     helperState.toggle()
                                 }, label: {
                                     Circle()
-                                        .strokeBorder(Color(hue: 245, saturation: 0.54, brightness: 0.9) , lineWidth: 1)
+                                        .strokeBorder(Color(hue: 245, saturation: 0.54, brightness: 0.9).opacity(0.5) , lineWidth: 1)
                                         .frame(width: 14, height: 14)
                                         .foregroundColor(.white)
                                         .overlay(Text("?")
