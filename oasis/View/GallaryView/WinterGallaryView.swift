@@ -10,7 +10,7 @@ import SwiftUI
 struct WinterGallaryView: View {
     //MARK: - Winter Image
     var images = Array(1...12).map({
-        "summerImg$\($0)"
+        "winterImg$\($0)"
     })
     
     var column = [GridItem(.flexible()),
@@ -48,7 +48,7 @@ var body: some View {
                 ScrollView(.horizontal){
                     LazyHGrid(rows:column) {
                         ForEach(images, id: \.self){ image in
-                            //MARK: - Spring Image sets
+                            //MARK: - Winter Image sets
                             Image("starImg")
                                 .resizable()
                                 .frame(width: UIScreen.screenWidth*0.264, height: UIScreen.screenWidth*0.264)
@@ -66,13 +66,13 @@ var body: some View {
                 Spacer()
             }
             
-            //MARK: - Summer Information
-            Image("summerImage")
+            //MARK: - Winter Information
+            Image("fallImage")
                 .resizable()
                 .frame(width: 99, height: 81, alignment: .center)
                 .offset(y:270)
             
-            Text("여름의 대삼각형")
+            Text("겨울의 대삼각형")
                 .foregroundColor(.white)
                 .tracking(-1)
                 .font(.custom("NotoSansKR-Regular", size: 14))
