@@ -7,36 +7,40 @@
 
 import SwiftUI
 
+
 struct GallaryView: View {
-    @State var viewState = CGSize.zero
+    
+    
+    var images = Array(1...12).map({
+        "image$\($0)"
+    })
+    var column = [GridItem(.flexible()),
+                  GridItem(.flexible()),
+                  GridItem(.flexible())]
     
     var body: some View {
         
         ZStack{
-            MemoryWithStarView()
+            Image(uiImage:UIImage(named: "GallaryBackImage") ?? UIImage(named: "placeHolderImage")!)
+                .ignoresSafeArea()
             
-            RoundedRectangle(cornerRadius: 10)
-                .animation(.spring())
-                .offset(y: self.viewState.height)
-                .gesture(
-                    DragGesture()
-                        .onChanged{ value in
-                            self.viewState = value.translation
+            VStack{
+                Text("1")
+                
+                ScrollView{
+                    LazyVGrid(columns: column) {
+                        ForEach(images, id: \.self){ image in
+                            Image("starImg")
+                                .resizable()
+                                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
                         }
-                        .onEnded{ val in
-                            if (self.viewState.height > 200) {
-                                self.viewState = CGSize(width: 0, height: 800)
-                            }
-                            else{
-                                self.viewState = .zero
-                            }
-                            
-                        }
-                            
-                            
-                )
-                .padding(.top, 100)
+                    }
+                    
+                }
+                
+            }
         }
+        
     }
 }
 

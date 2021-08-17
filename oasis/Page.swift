@@ -7,7 +7,7 @@ enum Page {
     case page3_1 // FindMyStarResultView
     case page4 // MyStar
     case page5 // spring view
-    case page5_a // spring gallery
+//    case page5_a // spring gallery
 //    case page5_1 // summer view
     
 //    case page5_1 // spring

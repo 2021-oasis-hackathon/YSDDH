@@ -26,11 +26,7 @@ struct ContentView: View {
             MyStarView()
         case .page5:
             MemoryWithStarView()
-        case .page5_a:
-            GallaryView()
-                .transition(.move(edge: .bottom))
-                .transition(.slide)
-                .transition(.scale)
+
         }
         
     }
