@@ -8,9 +8,9 @@
 import SwiftUI
 
 
-struct GallaryView: View {
+struct SpringGallaryView: View {
     
-    
+    //MARK: - Spring Image
     var images = Array(1...12).map({
         "image$\($0)"
     })
@@ -29,7 +29,6 @@ struct GallaryView: View {
                         .resizable()
                         .frame(width: 32, height: 12, alignment: .center)
                         .offset(y:50)
-
                         
                     
                     Image("trackingStarLogo")
@@ -51,6 +50,7 @@ struct GallaryView: View {
                 ScrollView(.horizontal){
                     LazyHGrid(rows:column) {
                         ForEach(images, id: \.self){ image in
+                            //MARK: - Spring Image sets
                             Image("starImg")
                                 .resizable()
                                 .frame(width: UIScreen.screenWidth*0.264, height: UIScreen.screenWidth*0.264)
@@ -68,7 +68,7 @@ struct GallaryView: View {
                 Spacer()
             }
             
-            //MARK
+            //MARK: - Season Information
             Image("springImage")
                 .resizable()
                 .frame(width: 99, height: 81, alignment: .center)
@@ -88,6 +88,6 @@ struct GallaryView: View {
 
 struct GallaryView_Previews: PreviewProvider {
     static var previews: some View {
-        GallaryView()
+        SpringGallaryView()
     }
 }

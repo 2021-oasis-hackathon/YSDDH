@@ -101,7 +101,7 @@ struct MemoryWithStarView: View {
                     })
             
             
-            GallaryView()
+            SpringGallaryView()
                 .animation(.spring())
                 .offset(y: self.viewState.height)
                 .ignoresSafeArea()
