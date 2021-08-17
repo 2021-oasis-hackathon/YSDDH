@@ -101,7 +101,7 @@ struct MemoryWithStarView: View {
                     })
             
             
-            Image(uiImage:UIImage(named: "GallaryBackImage") ?? UIImage(named: "placeHolderImage")!)
+            GallaryView()
                 .animation(.spring())
                 .offset(y: self.viewState.height)
                 .ignoresSafeArea()

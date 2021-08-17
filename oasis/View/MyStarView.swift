@@ -62,23 +62,7 @@ struct MyStarView: View {
 
                 }.offset(y:150)
 
-//
-//            ScrollView(.horizontal) {
-//                HStack {
-//                    Image("starImg")
-//                        .resizable()
-//                        .aspectRatio(contentMode: .fit)
-//                    Image("starImg")
-//                        .resizable()
-//                        .aspectRatio(contentMode: .fit)
-//                    Image("starImg")
-//                        .resizable()
-//                        .aspectRatio(contentMode: .fit)
-//                    Image("starImg")
-//                        .resizable()
-//                        .aspectRatio(contentMode: .fit)
-//                } .frame(height: 200)
-//            }
+
             
 
         }

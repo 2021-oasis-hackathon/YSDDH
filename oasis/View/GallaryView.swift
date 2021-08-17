@@ -23,22 +23,64 @@ struct GallaryView: View {
         ZStack{
             Image(uiImage:UIImage(named: "GallaryBackImage") ?? UIImage(named: "placeHolderImage")!)
                 .ignoresSafeArea()
-            
             VStack{
-                Text("1")
-                
-                ScrollView{
-                    LazyVGrid(columns: column) {
+                VStack{
+                    Image("downward")
+                        .resizable()
+                        .frame(width: 32, height: 12, alignment: .center)
+                        .offset(y:50)
+
+                        
+                    
+                    Image("trackingStarLogo")
+                        .resizable()
+                        .frame(width: 32, height: 47.3, alignment: .center)
+                        .padding()
+                        .offset(y:50)
+                    
+                    Text("추억 한장 남겨볼까요")
+                        .font(.custom("NotoSansKR-Regular", size: 18))
+                        .foregroundColor(.white)
+                        .tracking(-1)
+                        .padding(.bottom, 30)
+                        .offset(y:50)
+
+                }
+
+                Spacer()
+                ScrollView(.horizontal){
+                    LazyHGrid(rows:column) {
                         ForEach(images, id: \.self){ image in
                             Image("starImg")
                                 .resizable()
-                                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                                .frame(width: UIScreen.screenWidth*0.264, height: UIScreen.screenWidth*0.264)
+                                .aspectRatio(contentMode: .fit)
+                                .background(Color.white)
+                                .padding(UIScreen.screenWidth * (7.5/UIScreen.screenWidth))
+                                
                         }
                     }
-                    
+
                 }
-                
+                .padding(.leading, 8)
+                Spacer()
+                Spacer()
+                Spacer()
             }
+            
+            //MARK
+            Image("springImage")
+                .resizable()
+                .frame(width: 99, height: 81, alignment: .center)
+                .offset(y:270)
+            
+            Text("봄의 대삼각형")
+                .foregroundColor(.white)
+                .tracking(-1)
+                .font(.custom("NotoSansKR-Regular", size: 14))
+                .offset(y:360)
+
+            
         }
         
     }
