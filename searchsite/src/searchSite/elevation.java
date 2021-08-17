@@ -22,7 +22,7 @@ public class elevation {
     public static double elevation(double wedo,double kydo) throws IOException, ParseException {
 
         String myurl ="https://maps.googleapis.com/maps/api/elevation/json?locations=";
-        String key = "AIzaSyBY8mSm8eMWweBsHJcgYUSUzKNnwFR_MhI";
+        String key = "SECRET-KEY";
 
         //받은 위도와 경도 String으로 변환
         String we = String.valueOf(wedo);
