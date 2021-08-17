@@ -9,30 +9,33 @@ import SwiftUI
 
 struct GallaryView: View {
     @State var viewState = CGSize.zero
+    
     var body: some View {
         
         ZStack{
             MemoryWithStarView()
             
             RoundedRectangle(cornerRadius: 10)
+                .animation(.spring())
+                .offset(y: self.viewState.height)
                 .gesture(
                     DragGesture()
-                            .onChanged{ value in
-                                self.viewState = value.translation
+                        .onChanged{ value in
+                            self.viewState = value.translation
+                        }
+                        .onEnded{ val in
+                            if (self.viewState.height > 200) {
+                                self.viewState = CGSize(width: 0, height: 800)
                             }
-                            .onEnded{ value in
-                                if self.viewState.height > 200 {
-                                    self.viewState = CGSize(width: 0, height: 500)
-                                }
-                                else{
-                                    self.viewState = CGSize.zero
-                                }
-                                
+                            else{
+                                self.viewState = .zero
                             }
+                            
+                        }
                             
                             
                 )
-                .frame(width: 300, height: 600, alignment: .center)
+                .padding(.top, 100)
         }
     }
 }
