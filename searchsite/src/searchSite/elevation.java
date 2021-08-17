@@ -17,9 +17,10 @@ import java.net.URLEncoder;
 import java.util.Calendar;
 
 public class elevation {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ParseException {
+        weather();
     }
-    public String[] weather() throws IOException, ParseException {
+    public static void weather() throws IOException, ParseException {
 
         //습도, 구름의 양 받을 array
         String[] resultArr = new String[2];
@@ -31,11 +32,11 @@ public class elevation {
         //URL 제작
         StringBuilder urlString = new StringBuilder(myurl);
         urlString.append(we+",");
-        urlString.append(ky+",");
+        urlString.append(ky);
         urlString.append("&" + URLEncoder.encode("key", "UTF-8") + "=" + URLEncoder.encode(key, "UTF-8"));
 
 
-
+        System.out.println(urlString);
         //URL바탕으로 서버로부터 json data 가져옴
         URL url = new URL(urlString.toString());
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -61,29 +62,16 @@ public class elevation {
 //        JSON data = result로부터 안쪽의 item까지 진입
         JSONParser jsonParser = new JSONParser();
         JSONObject jsonObj = (JSONObject) jsonParser.parse(result);
-        JSONObject parseResponse = (JSONObject) jsonObj.get("response");
-        JSONObject parseBody = (JSONObject) parseResponse.get("body");
-        JSONObject parseItems = (JSONObject) parseBody.get("items");
+        JSONArray resultArray = (JSONArray) jsonObj.get("results");
+        JSONObject elevationObject = (JSONObject) resultArray.get(0);
+        System.out.println(elevationObject.get("elevation"));
 
-        JSONArray parseItem = (JSONArray) parseItems.get("item");
+        JSONObject parseResult = (JSONObject) jsonObj.get("result");
+        JSONObject parseElevation = (JSONObject) parseResult.get("elevation");
 
 
-        for(int i = 0 ; i < parseItem.size() ; i++){
-            JSONObject obj = (JSONObject) parseItem.get(i);
-            Object fcstV = obj.get("fcstValue");
-            String cate = (String) obj.get("category");
-            //날씨 code볼때까지 loop
-            switch(cate) {
-                //구름
-                case "SKY":
-                    resultArr[0] = (obj.get("fcstValue").toString());
-                    break;
-                //습도
-                case "REH":
-                    resultArr[1] = (obj.get("fcstValue").toString());
-                    break;
-            }
-        }
-        return resultArr;
+        JSONArray parseItem = (JSONArray) parseElevation.get("item");
+
+
     }
 }
