@@ -87,7 +87,7 @@ struct MemoryWithStarView: View {
                                     .font(.custom("NotoSansKR-Regular", size: 20))
                                 Button(action: {
                                     withAnimation {
-                                        self.viewState = .zero
+                                    self.viewState = .zero
                                     }
                                 }, label: {
                                     Image(uiImage:UIImage(named: "goDownBtn") ?? UIImage(named: "placeHolderImage")!)
@@ -101,7 +101,7 @@ struct MemoryWithStarView: View {
                     })
             
             
-            Image(uiImage:UIImage(named: "SpringBackgroundImage") ?? UIImage(named: "placeHolderImage")!)
+            Image(uiImage:UIImage(named: "GallaryBackImage") ?? UIImage(named: "placeHolderImage")!)
                 .animation(.spring())
                 .offset(y: self.viewState.height)
                 .ignoresSafeArea()
