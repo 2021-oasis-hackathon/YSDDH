@@ -62,8 +62,8 @@ struct FallView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 12, height: 20)
-                                    .offset(x:20)
-                            })
+                            
+                            }).padding()
                             Spacer()
                             Button(action: {
                                 withAnimation {
@@ -74,8 +74,7 @@ struct FallView: View {
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 12, height: 20)
-                                    .offset(x:-20)
-                            })
+                            }).padding()
                             
                         }
                         VStack{

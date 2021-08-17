@@ -63,7 +63,7 @@ struct MemoryWithStarView: View {
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 12, height: 20)
                                     .offset(x:20)
-                            })
+                            }).padding()
                             Spacer()
                             Button(action: {
                                 withAnimation {
@@ -75,7 +75,7 @@ struct MemoryWithStarView: View {
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 12, height: 20)
                                     .offset(x:-20)
-                            })
+                            }).padding()
                             
                         }
                         VStack{
