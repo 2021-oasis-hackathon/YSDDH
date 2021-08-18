@@ -185,3 +185,17 @@ justify-content: center;
   margin-top: 120px;
   letter-spacing: -0.05em;
 }
+.goto-btn{
+  width: 150px;
+  margin-top: 20px;
+  padding: 5px 0px 5px 0px;
+background: #EADCFC;
+box-shadow: 0px 4px 4px #CAB7E4;
+border-radius: 10px;
+}
+.btn-wrapper{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
