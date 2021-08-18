@@ -151,8 +151,6 @@ struct MainPageView: View {
 }
 
 
-
-
 // MARK: Square Block
 struct SquareView: View {
     

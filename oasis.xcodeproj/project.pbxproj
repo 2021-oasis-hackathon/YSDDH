@@ -30,6 +30,7 @@
 		CBE7D0C026CC2FE4006F33E3 /* SummerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7D0BF26CC2FE4006F33E3 /* SummerView.swift */; };
 		CBE7D0C226CC303E006F33E3 /* FallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7D0C126CC303E006F33E3 /* FallView.swift */; };
 		CBE7D0C426CC3127006F33E3 /* WinterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7D0C326CC3127006F33E3 /* WinterView.swift */; };
+		CBE7D0C626CCC814006F33E3 /* FindMyStarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7D0C526CCC814006F33E3 /* FindMyStarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		CBE7D0BF26CC2FE4006F33E3 /* SummerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummerView.swift; sourceTree = "<group>"; };
 		CBE7D0C126CC303E006F33E3 /* FallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallView.swift; sourceTree = "<group>"; };
 		CBE7D0C326CC3127006F33E3 /* WinterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinterView.swift; sourceTree = "<group>"; };
+		CBE7D0C526CCC814006F33E3 /* FindMyStarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyStarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				CB31898526C9AB5500B126F6 /* StartView.swift */,
 				CB57E2B826C8451800F091ED /* MainPageView.swift */,
 				CB31897F26C99C4C00B126F6 /* FindMyStarView.swift */,
+				CBE7D0C526CCC814006F33E3 /* FindMyStarViewModel.swift */,
 				CB31898B26C9FD0400B126F6 /* FindMyStarResultView.swift */,
 				CB31898726C9EE5C00B126F6 /* MyStarView.swift */,
 				CB31898926C9EE6B00B126F6 /* MemoryWithStarView.swift */,
@@ -366,6 +369,7 @@
 				CB31898C26C9FD0500B126F6 /* FindMyStarResultView.swift in Sources */,
 				CBE7D0C426CC3127006F33E3 /* WinterView.swift in Sources */,
 				CBE7D0BC26CC2EF6006F33E3 /* FallGallaryView.swift in Sources */,
+				CBE7D0C626CCC814006F33E3 /* FindMyStarViewModel.swift in Sources */,
 				CB31898826C9EE5C00B126F6 /* MyStarView.swift in Sources */,
 				CBE7D0C026CC2FE4006F33E3 /* SummerView.swift in Sources */,
 			);

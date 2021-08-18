@@ -17,6 +17,7 @@ struct MemoryWithStarView: View {
         ZStack{
             Image(uiImage:UIImage(named: "SpringBackgroundImage") ?? UIImage(named: "placeHolderImage")!)
                 .ignoresSafeArea()
+                .scaledToFit()
                 .overlay(
                     ZStack{
                         HStack{

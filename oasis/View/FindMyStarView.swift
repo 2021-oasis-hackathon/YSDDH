@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FindMyStarView: View {
     @EnvironmentObject var viewRouter: ViewRouter
+    @StateObject var selectedItems = FindMyStarViewModel()
     
     var body: some View {
         ZStack{
@@ -63,9 +64,43 @@ struct FindMyStarView: View {
                 .offset(x:60, y: -135)
                 
                 HStack{
-                    smallSquareView("전라남도", UIImage(named: "goBackBtnWhite") ?? UIImage(named: "placeHolderImage")!)
-                    smallSquareView("전라북도", UIImage(named: "goBackBtnWhite") ?? UIImage(named: "placeHolderImage")!)
-                    smallSquareView("광주", UIImage(named: "goBackBtnWhite") ?? UIImage(named: "placeHolderImage")!)
+                    //MARK: - JeonNam Button
+                    Button(action: {
+                        withAnimation(.easeInOut(duration: 0.5)) {
+                            selectedItems.jeonNam.toggle()
+                        }
+                    }, label: {
+                        if selectedItems.jeonNam == true{
+                            smallSquareView("전라남도", UIImage(named: "JeonNam_C") ?? UIImage(named: "placeHolderImage")!)
+                        }else{
+                            smallSquareView("전라남도", UIImage(named: "JeonNam_G") ?? UIImage(named: "placeHolderImage")!)
+                        }
+                    }).buttonStyle(PlainButtonStyle())
+
+                    Button(action: {
+                        withAnimation(.easeInOut(duration: 0.75)) {
+                            selectedItems.jeonBuk.toggle()
+                        }
+                    }, label: {
+                        if selectedItems.jeonBuk == true{
+                            smallSquareView("전라북도", UIImage(named: "JeonBuk_C") ?? UIImage(named: "placeHolderImage")!)
+                        }else{
+                            smallSquareView("전라북도", UIImage(named: "JeonBuk_G") ?? UIImage(named: "placeHolderImage")!)
+                        }
+                    }).buttonStyle(PlainButtonStyle())
+                    
+                    Button(action: {
+                        withAnimation(.easeInOut(duration: 1)) {
+                            selectedItems.gwangju.toggle()
+                        }
+                    }, label: {
+                        if selectedItems.gwangju == true{
+                            smallSquareView("광주", UIImage(named: "Gwanju_C") ?? UIImage(named: "placeHolderImage")!)
+                        }else{
+                            smallSquareView("광주", UIImage(named: "Gwanju_G") ?? UIImage(named: "placeHolderImage")!)
+                        }
+                    }).buttonStyle(PlainButtonStyle())
+        
                 }.offset(x: -45.0, y: -75.0)
                 
                 //MARK: - Seperation Line
@@ -145,11 +180,11 @@ struct smallSquareView: View {
         
         VStack{
             ZStack{
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(Color(hue: 240, saturation: 0, brightness: 0.85, opacity: 0.9))
-                .frame(width: 42, height: 42)
+//                RoundedRectangle(cornerRadius: 10)
+//                    .fill(Color(hue: 240, saturation: 0, brightness: 0.85, opacity: 0.9))
+//                .frame(width: 42, height: 42)
                 Image(uiImage: img)
-                    .frame(width: 24, height: 24)
+                    .frame(width: 42, height: 42)
             }
         
             Text(name)
