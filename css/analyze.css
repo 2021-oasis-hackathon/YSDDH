@@ -76,6 +76,12 @@ letter-spacing: -0.05em;
   color: #4324E1;
   letter-spacing: -0.05em;
 }
+#p35{
+  font-size: 35px;
+line-height: 126%;
+letter-spacing: -0.05em;
+
+}
 .nav-wrapper {
   display: flex;
   align-items: center;
