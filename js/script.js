@@ -13,20 +13,20 @@ $(function(){
 })
 })
 
-var top1 = document.querySelector('#one').offsetTop;
-var top2 = document.querySelector('#two').offsetTop;
-var top3 = document.querySelector('#three').offsetTop;
-var top4 = document.querySelector('#four').offsetTop;
+// var top1 = document.querySelector('#one').offsetTop;
+// var top2 = document.querySelector('#two').offsetTop;
+// var top3 = document.querySelector('#three').offsetTop;
+// var top4 = document.querySelector('#four').offsetTop;
 
-var goto1 = document.querySelector('#go1');
-var goto2 = document.querySelector('#go2');
-var goto3 = document.querySelector('#go3');
-var goto4 = document.querySelector('#go4');
+// var goto1 = document.querySelector('#go1');
+// var goto2 = document.querySelector('#go2');
+// var goto3 = document.querySelector('#go3');
+// var goto4 = document.querySelector('#go4');
 
-function moveScrollTo(par){
-  window.scrollTo({top:par, behavior:'smooth'})
-}
-goto1.addEventListener("click",function(){moveScrollTo(top1)})
-goto2.addEventListener("click",function(){moveScrollTo(top2)})
-goto3.addEventListener("click",function(){moveScrollTo(top3)})
-goto4.addEventListener("click",function(){moveScrollTo(top4)})
+// function moveScrollTo(par){
+//   window.scrollTo({top:par, behavior:'smooth'})
+// }
+// goto1.addEventListener("click",function(){moveScrollTo(top1)})
+// goto2.addEventListener("click",function(){moveScrollTo(top2)})
+// goto3.addEventListener("click",function(){moveScrollTo(top3)})
+// goto4.addEventListener("click",function(){moveScrollTo(top4)})
