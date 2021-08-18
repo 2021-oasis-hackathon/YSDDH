@@ -21,7 +21,7 @@ public class ParseJSON {
 
     //weather method
     public String[] weather(String nx,String ny) throws IOException, ParseException {
-
+        //공공데이터포털 기상청_단기예보 조회서비스
         //날짜 받는 부분
         Calendar cal = Calendar.getInstance();
         int year = cal.get(cal.YEAR);

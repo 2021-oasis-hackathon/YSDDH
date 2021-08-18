@@ -20,7 +20,9 @@ public class elevation {
     public static void main(String[] args) throws IOException, ParseException {
     }
     public static double elevation(double wedo,double kydo) throws IOException, ParseException {
+        //Google maps platform elevation api
 
+        
         String myurl ="https://maps.googleapis.com/maps/api/elevation/json?locations=";
         String key = "SECRET-KEY";
 
