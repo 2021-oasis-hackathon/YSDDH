@@ -6,17 +6,40 @@
 //
 
 import SwiftUI
+import UIKit
+
+struct ImagePicker: UIViewControllerRepresentable {
+ 
+    var sourceType: UIImagePickerController.SourceType = .photoLibrary
+ 
+    func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePicker>) -> UIImagePickerController {
+ 
+        let imagePicker = UIImagePickerController()
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = sourceType
+ 
+        return imagePicker
+    }
+ 
+    func updateUIViewController(_ uiViewController: UIImagePickerController, context: UIViewControllerRepresentableContext<ImagePicker>) {
+ 
+    }
+}
 
 
 struct SpringGallaryView: View {
     
     //MARK: - Spring Image
-    var images = Array(1...12).map({
-        "image$\($0)"
+    var images = Array(1...8).map({
+        "gallaery_pic\($0)"
     })
     var column = [GridItem(.flexible()),
                   GridItem(.flexible()),
                   GridItem(.flexible())]
+    
+    @State private var isPhotoLibrary = false
+    @State private var uploadImage = UIImage()
+    
     
     var body: some View {
         
@@ -49,9 +72,22 @@ struct SpringGallaryView: View {
                 Spacer()
                 ScrollView(.horizontal){
                     LazyHGrid(rows:column) {
+                        Button(action: {
+                            self.isPhotoLibrary = true
+                        }, label: {
+                            Image("uploadPageImg")
+                                .resizable()
+                                .frame(width: UIScreen.screenWidth*0.264, height: UIScreen.screenWidth*0.264)
+                                .aspectRatio(contentMode: .fit)
+                                .background(Color.white)
+                                .padding(UIScreen.screenWidth * (7.5/UIScreen.screenWidth))
+                        }).sheet(isPresented: $isPhotoLibrary, content: {
+                            ImagePicker(sourceType: .photoLibrary)
+                        })
+                        
                         ForEach(images, id: \.self){ image in
                             //MARK: - Spring Image sets
-                            Image("starImg")
+                            Image(image)
                                 .resizable()
                                 .frame(width: UIScreen.screenWidth*0.264, height: UIScreen.screenWidth*0.264)
                                 .aspectRatio(contentMode: .fit)

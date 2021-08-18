@@ -32,6 +32,10 @@ struct ContentView: View {
             FallView()
         case .page8:
             WinterView()
+        case .page9:
+            MyStarResultView_1()
+            
+            
         }
         
     }

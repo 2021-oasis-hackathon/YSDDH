@@ -21,7 +21,7 @@ struct FindMyStarView: View {
             ZStack{
                 //MARK: - Background Image
                 VStack{
-                    Image(uiImage:UIImage(named: "RecommendCoursePage_Header") ?? UIImage(named: "placeHolderImage")!)
+                    Image(uiImage:UIImage(named: "RecommendPlacePage_Header") ?? UIImage(named: "placeHolderImage")!)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .ignoresSafeArea()

@@ -53,12 +53,24 @@ struct MyStarView: View {
             
                 ScrollView(.horizontal){
                     HStack(alignment:.center){
-                        CardView("지승이 천문대", ["전남", "산지"])
-                        CardView("지승이 천문대", ["전남", "산지"])
-                        CardView("지승이 천문대", ["전남", "산지"])
-                        CardView("지승이 천문대", ["전남", "산지"])
-                        CardView("지승이 천문대", ["전남", "산지"])
-                    }.padding()
+                        
+                        Button(action: {
+                            
+                        }, label: {
+                            CardView("RecommendCourseSelectPage_place1")
+                        })
+                        Button(action: {
+                            
+                        }, label: {
+                            CardView("RecommendCourseSelectPage_place2")
+                        })
+                        Button(action: {
+                
+                        }, label: {
+                            CardView("RecommendCourseSelectPage_place3")
+                        })
+
+                    }.padding(30)
 
                 }.offset(y:150)
 
@@ -72,34 +84,31 @@ struct MyStarView: View {
 
 
 struct CardView: View{
-    private var title: String
-    private var tags: [String]
+    private var img: String
     
-    init(_ title: String, _ tags: [String]){
-        self.title = title
-        
-        self.tags = tags
+    init(_ img: String){
+        self.img = img
     }
     
     
     var body: some View{
         ZStack{
-            Image(uiImage:UIImage(named: "NightSkyImg") ?? UIImage(named: "placeHolderImage")!)
+            Image(img)
                 .resizable()
+                .scaledToFit()
                 .frame(width: UIScreen.screenWidth*0.568, height: UIScreen.screenHeight*0.324, alignment: .center)
                 .cornerRadius(10)
-            VStack(alignment: .leading){
-                Text("지승이 천문대")
-                    .foregroundColor(.white)
-                    .font(.custom("NotoSansKR-Regular", size: 22))
-                Text("#전남 #산지")
-                    .foregroundColor(.white)
-                    .font(.custom("NotoSansKR-Regular", size: 15))
+//            VStack(alignment: .leading){
+//                Text("지승이 천문대")
+//                    .foregroundColor(.white)
+//                    .font(.custom("NotoSansKR-Regular", size: 22))
+//                Text("#전남 #산지")
+//                    .foregroundColor(.white)
+//                    .font(.custom("NotoSansKR-Regular", size: 15))
                     
-            }.offset(x:-20, y: -80)
+            }.offset(x:-20, y: 0)
         
             
-        }
     }
     
 }

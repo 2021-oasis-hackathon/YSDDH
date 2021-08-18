@@ -10,6 +10,7 @@ enum Page {
     case page6 // summer view
     case page7 // fall view
     case page8 // winter view
+    case page9 
 //    case page5_a // spring gallery
 //    case page5_1 // summer view
     

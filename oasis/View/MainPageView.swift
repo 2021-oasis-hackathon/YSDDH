@@ -112,7 +112,7 @@ struct MainPageView: View {
                                     RoundedRectangle(cornerRadius: 20)
                                         .strokeBorder(Color(hue: 245, saturation: 0.54, brightness: 0.9).opacity(0.5))
                                         .offset(x: -40)
-                                    Text("전라남도, 여수")
+                                    Text("광주광역시")
                                         .font(.custom("NotoSansKR", size: 10))
                                         .offset(x: -39, y:0.5)
                                 }
