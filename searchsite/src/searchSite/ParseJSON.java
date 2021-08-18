@@ -48,7 +48,7 @@ public class ParseJSON {
         //습도, 구름의 양 받을 array
         String[] resultArr = new String[2];
         String myurl ="http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst";
-        String key = "SECRET-KEY";
+        String key = "oIfU%2BI9A77i5G8CuU8PpjLtQ%2FEMspjnhaRo3tRnh%2BGsgl8BOcrCKUUOZbodB6zZujAzgPR9ihS0Q%2Fzs3u2xyqA%3D%3D";
 
 
         //URL 제작
