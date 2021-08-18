@@ -10,12 +10,14 @@ import SwiftUI
 struct FindMyStarResultView: View {
     
     @EnvironmentObject var viewRouter: ViewRouter
+    var selectedItems = FindMyStarViewModel()
+    
     
     var body: some View {
         ZStack{
             //MARK: - Background Image
             VStack{
-                Image(uiImage:UIImage(named: "RecommendResultBack") ?? UIImage(named: "placeHolderImage")!)
+                Image(uiImage:UIImage(named: "RecommendCoursePage_Header") ?? UIImage(named: "placeHolderImage")!)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .ignoresSafeArea()
@@ -29,18 +31,20 @@ struct FindMyStarResultView: View {
                 Spacer()
                 HStack{
                     VStack(alignment: .leading){
-                            Button(action: {
-                                withAnimation {
-                                    viewRouter.currentPage = .page3
-                                }
-                            }, label: {
-                                Image(uiImage:UIImage(named: "goBackBtnWhite") ?? UIImage(named: "placeHolderImage")!)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 12, height: 15)
-                            })
-                            Spacer()
+                        Button(action: {
+                            withAnimation {
+                                viewRouter.currentPage = .page3
+                            }
+                        }, label: {
+                            Image(uiImage:UIImage(named: "goBackBtnWhite") ?? UIImage(named: "placeHolderImage")!)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 12, height: 15)
+                        })
+                    
+                        Spacer()
                         }
+                    Text(selectedItems.sea.description)
                     Spacer()
                     
                 }.offset(x:30, y:10)
@@ -50,15 +54,10 @@ struct FindMyStarResultView: View {
     }
 }
 
-struct RoundRectangleView: View{
-    var body: some View{
-        Text("!")
-    }
-}
-
 
 struct FindMyStarResultView_Previews: PreviewProvider {
     static var previews: some View {
         FindMyStarResultView().environmentObject(ViewRouter())
+            .environmentObject(FindMyStarViewModel())
     }
 }

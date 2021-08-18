@@ -96,7 +96,9 @@ struct MainPageView: View {
                                 Image(uiImage:UIImage(named: "starImg") ?? UIImage(named: "placeHolderImage")!)
                                 Text("지금 별 보러 가요").font(.custom("NotoSansKR-Bold", size: 13))
                                 Button(action: {
-                                    helperState.toggle()
+                                    withAnimation {
+                                        helperState.toggle()
+                                    }
                                 }, label: {
                                     Circle()
                                         .strokeBorder(Color(hue: 245, saturation: 0.54, brightness: 0.9).opacity(0.5) , lineWidth: 1)
@@ -124,11 +126,11 @@ struct MainPageView: View {
                         Spacer()
                     }
                     
-                    RectangleBottomBox("1","파주 감악산 출렁다리", "#별빛 차오름 99")
+                    RectangleBottomBox("1","땅끝조각공원", "#전남 해남군")
                         .offset(y: 35.0)
-                    RectangleBottomBox("2","파주 감악산 출렁다리", "#별빛 차오름 99")
+                    RectangleBottomBox("2","달궁계곡", "#전북 남원시")
                         .offset(y: 40.0)
-                    RectangleBottomBox("3","파주 감악산 출렁다리", "#별빛 차오름 99")
+                    RectangleBottomBox("3","영남용 바위", "#전남 고흥군")
                         .offset(y: 45.0)
                     
                     

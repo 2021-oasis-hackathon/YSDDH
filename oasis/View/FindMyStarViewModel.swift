@@ -15,4 +15,12 @@ class FindMyStarViewModel: ObservableObject{
     @Published var mountain: Bool = false
     @Published var sea: Bool = false
     @Published var valley: Bool = false
+    
+    
+    var typeName: [String] {
+        ["전남": jeonNam, "전북": jeonBuk, "광주":gwangju,"평야":flat, "산": mountain, "바다": sea, "도심": valley]
+            .filter { $1 == true}
+            .map{$0.key}
+            .reversed()
+    }
 }
