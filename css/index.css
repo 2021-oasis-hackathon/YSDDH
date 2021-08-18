@@ -3,7 +3,9 @@ ul {
   list-style-type: disc;
   text-decoration: none;
 }
-
+a{
+  color: #000000;
+}
 body {
   margin: 0;
   font-family: 'Gowun Dodum', sans-serif;

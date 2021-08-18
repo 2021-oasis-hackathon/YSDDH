@@ -58,6 +58,9 @@ h4{
   border-bottom: 0.5px solid #ececec;
   z-index: 100;
 }
+a{
+  color: #000;
+}
 #middle-logo{
   width: 76px;
 }
