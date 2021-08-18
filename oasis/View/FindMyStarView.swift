@@ -244,25 +244,107 @@ struct FindMyStarView: View {
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: 12, height: 15)
                             })
-                            VStack{
-                                LazyVGrid(columns:column, alignment: .center){
-                                    ForEach(selectedItems.typeName, id: \.self){value in
-                                        RoundRectangleTagView(selected: value)
-                                    }
-                                }.offset(x:-30)
+                            ZStack{
+                                VStack(alignment:.leading){
+                                    LazyVGrid(columns:column, alignment: .center){
+                                        ForEach(selectedItems.typeName, id: \.self){value in
+                                            RoundRectangleTagView(selected: value)
+                                        }
+                                    }.offset(x:-30)
+                                    
+                                    Text("키워드를 바탕으로 한 \n    검색 결과입니다")
+                                        .font(.custom("NotoSansKR-Regular", size: 16))
+                                        .foregroundColor(.white)
+                                        .position(x: 150, y: 25)
+
+
+                                }
+                                VStack{
+                                    Spacer()
+                                    Image("dummyMap")
+                                        .offset(x:-25, y:10)
+                                        .background(Image("backWave")
+                                                    .resizable()
+                                                        .offset(y:-20)
+                                                    .frame(width: 435, height: 268, alignment: .center))
+                                    VStack{
+                                        HStack{
+                                            Text("1")
+                                                .font(.custom("NotoSansKR-Bold", size: 30))
+                                                .padding(.trailing, 15)
+                                                .offset(y:5)
+                                            VStack(spacing:3){
+                                                Text("곡성섬진강천문대")
+                                                    .offset(x:-7)
+                                                HStack{
+                                                    RoundRectangleTagView(selected: "강가")
+                                                    RoundRectangleTagView(selected: "구례군")
+                                                    RoundRectangleTagView(selected: "맑음")
+                                                }
+                                            }
+                                            
+                                        }.offset(x:-30, y:50)
+                                        RoundedRectangle(cornerRadius: 1)
+                                            .fill(Color(red: 0.92, green: 0.93, blue: 0.95))
+                                            .frame(width: 250, height: 2, alignment: .center)
+                                            .offset(x:-25, y:30)
+                                    }.offset(y:-15)
+                                    VStack{
+                                        HStack{
+                                            Text("2")
+                                                .font(.custom("NotoSansKR-Bold", size: 30))
+                                                .padding(.trailing, 15)
+                                                .offset(y:5)
+                                            VStack(spacing:3){
+                                                Text("중대리계곡")
+                                                    .offset(x:-27)
+                                                HStack{
+                                                    RoundRectangleTagView(selected: "강가")
+                                                    RoundRectangleTagView(selected: "구례군")
+                                                    RoundRectangleTagView(selected: "맑음")
+                                                }
+                                            }
+                                            
+                                        }.offset(x:-30, y:50)
+                                        RoundedRectangle(cornerRadius: 1)
+                                            .fill(Color(red: 0.92, green: 0.93, blue: 0.95))
+                                            .frame(width: 250, height: 2, alignment: .center)
+                                            .offset(x:-25, y:30)
+                                    }.offset(y:-40)
+                                    VStack{
+                                        HStack{
+                                            Text("3")
+                                                .font(.custom("NotoSansKR-Bold", size: 30))
+                                                .padding(.trailing, 15)
+                                                .offset(y:5)
+                                            VStack(spacing:3){
+                                                Text("백련입구")
+                                                    .offset(x:-35)
+                                                HStack{
+                                                    RoundRectangleTagView(selected: "평야")
+                                                    RoundRectangleTagView(selected: "신안군")
+                                                    RoundRectangleTagView(selected: "흐림")
+                                                }
+                                            }
+                                            
+                                        }.offset(x:-30, y:20)
+                                        RoundedRectangle(cornerRadius: 1)
+                                            .fill(Color(red: 0.92, green: 0.93, blue: 0.95))
+                                            .frame(width: 250, height: 2, alignment: .center)
+                                            .offset(x:-25, y:0)
+                                        
+                                    }.offset(y:-40)
+                                }
                                 
-                                Text("키워드를 바탕으로 한 \n    검색 결과입니다")
-                                    .font(.custom("NotoSansKR-Regular", size: 16))
-                                    .foregroundColor(.white)
-                                    .position(x: 155, y: 25)
                             }
-                            
-                            Spacer()
-                            }
+                        }
+                        
 
                         Spacer()
+
                         
-                    }.offset(x:30, y:10)
+                    }
+                    .offset(x:30, y:10)
                 }
                 
             }

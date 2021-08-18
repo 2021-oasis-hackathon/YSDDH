@@ -74,7 +74,6 @@ struct MainPageView: View {
                                     .zIndex(1.0)
                                     .frame(width: 50, height: 60)
                                     .offset(x:80, y:0)
-
                                 
                                 RoundedRectangle(cornerRadius: 20)
                                     .fill(Color(hue: 0, saturation: 0, brightness: 0.93).opacity(0.5))
@@ -130,7 +129,7 @@ struct MainPageView: View {
                         .offset(y: 35.0)
                     RectangleBottomBox("2","달궁계곡", "#전북 남원시")
                         .offset(y: 40.0)
-                    RectangleBottomBox("3","영남용 바위", "#전남 고흥군")
+                    RectangleBottomBox("3","영남용바위", "#전남 고흥군")
                         .offset(y: 45.0)
                     
                     
@@ -179,6 +178,7 @@ struct SquareView: View {
                 .font(.custom("NotoSansKR", size: 10))
                 .offset(x:-21, y: -10)
                 .frame(width: 89, height: 39, alignment: .leading )
+            
             
             Image(uiImage: img)
                 .resizable()
@@ -231,6 +231,7 @@ struct RectangleBottomBox: View{
                 Text(content)
                     .notoSansFontContent()
             }
+            .fixedSize(horizontal: true, vertical: true)
             .zIndex(1.0)
             Image(uiImage:UIImage(named: "observatory") ?? UIImage(named: "placeHolderImage")!)
                 .offset(x:90)
