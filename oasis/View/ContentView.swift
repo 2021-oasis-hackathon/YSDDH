@@ -34,7 +34,13 @@ struct ContentView: View {
             WinterView()
         case .page9:
             MyStarResultView_1()
+        case .page9_1:
+            MyStarResultView_2()
+        case .page9_2:
+            MyStarResultView_3()
             
+        case .page10:
+            NowView1()
             
         }
         

@@ -163,9 +163,9 @@ struct FindMyStarView: View {
                             }
                         }, label: {
                             if selectedItems.valley == true{
-                                smallSquareView("도심", UIImage(named: "valley_C") ?? UIImage(named: "placeHolderImage")!)
+                                smallSquareView("강가", UIImage(named: "valley_C") ?? UIImage(named: "placeHolderImage")!)
                             }else{
-                                smallSquareView("도심", UIImage(named: "valley_G") ?? UIImage(named: "placeHolderImage")!)
+                                smallSquareView("강가", UIImage(named: "valley_G") ?? UIImage(named: "placeHolderImage")!)
                             }
                         }).buttonStyle(PlainButtonStyle())
                         

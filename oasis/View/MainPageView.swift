@@ -124,13 +124,33 @@ struct MainPageView: View {
 
                         Spacer()
                     }
-                    
-                    RectangleBottomBox("1","땅끝조각공원", "#전남 해남군")
-                        .offset(y: 35.0)
-                    RectangleBottomBox("2","달궁계곡", "#전북 남원시")
-                        .offset(y: 40.0)
-                    RectangleBottomBox("3","영남용바위", "#전남 고흥군")
-                        .offset(y: 45.0)
+                    Button(action: {
+                        withAnimation {
+                            viewRouter.currentPage = .page10
+                            
+                        }
+                    }, label: {
+                        RectangleBottomBox("1","중대리계곡", "#전남 구례군")
+                            .offset(y: 35.0)
+                    }).buttonStyle(PlainButtonStyle())
+                    Button(action: {
+                        withAnimation {
+                            viewRouter.currentPage = .page10
+                            
+                        }
+                    }, label: {
+                        RectangleBottomBox("2","백수해안도로", "#전남 영광군")
+                            .offset(y: 40.0)
+                    }).buttonStyle(PlainButtonStyle())
+                    Button(action: {
+                        withAnimation {
+                            viewRouter.currentPage = .page10
+                            
+                        }
+                    }, label: {
+                        RectangleBottomBox("3","평승내들", "#전남 담양군")
+                            .offset(y: 45.0)
+                    }).buttonStyle(PlainButtonStyle())
                     
                     
                 Spacer()

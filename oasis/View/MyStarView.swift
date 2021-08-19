@@ -55,17 +55,24 @@ struct MyStarView: View {
                     HStack(alignment:.center){
                         
                         Button(action: {
-                            
+                            withAnimation {
+                                viewRouter.currentPage = .page9_2
+                            }
                         }, label: {
                             CardView("RecommendCourseSelectPage_place1")
                         })
                         Button(action: {
+                            withAnimation {
+                                viewRouter.currentPage = .page9_1
+                            }
                             
                         }, label: {
                             CardView("RecommendCourseSelectPage_place2")
                         })
                         Button(action: {
-                
+                            withAnimation {
+                                viewRouter.currentPage = .page9
+                            }
                         }, label: {
                             CardView("RecommendCourseSelectPage_place3")
                         })

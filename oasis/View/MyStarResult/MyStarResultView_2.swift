@@ -1,5 +1,5 @@
 //
-//  MyStarResultView_1.swift
+//  MyStarResultView_2.swift
 //  oasis
 //
 //  Created by 최은기 on 2021/08/19.
@@ -7,20 +7,17 @@
 
 import SwiftUI
 
-struct MyStarResultView_1: View {
+struct MyStarResultView_2: View {
     @EnvironmentObject var viewRouter: ViewRouter
-    @State var isWeb = false
 
-    
     var body: some View {
         ScrollView{
             ZStack{
-                Text("땅끝조각공원")
+                Text("영남용바위")
                     .foregroundColor(.white)
                     .font(.custom("", size: 24))
                     .zIndex(1.0)
                     .offset(y:-480)
-                
                 //MARK: - Background Image
                 VStack{
                     Image(uiImage:UIImage(named: "RecommendCoursePage_Header") ?? UIImage(named: "placeHolderImage")!)
@@ -55,12 +52,12 @@ struct MyStarResultView_1: View {
                     VStack(alignment:.leading){
                         Text("별이 아주 잘 보여요!")
                             .font(.custom("", size: 17))
-                        Text("송지면 땅끝해안로 2785")
+                        Text("영남면 우천리")
                             .font(.custom("", size: 13))
 
                     }.zIndex(1.0)
                      .offset(y:-370)
-                    Image("RecommendCourseSelectPage_Pic1_DDangKKut")
+                    Image("RecommendCourseSelectPage_Pic2_YoungNam")
                         .resizable()
                         .frame(width: 326, height: 204, alignment: .center)
                         .offset(y:100)
@@ -79,14 +76,14 @@ struct MyStarResultView_1: View {
                             Circle()
                                 .foregroundColor(Color(hue: 245, saturation: 0.54, brightness: 0.9).opacity(1))
                                 .frame(width: 6.24, height: 6.24, alignment: .center)
-                            Text("사구미어촌체험마을식당")
+                            Text("용바위횟집")
                                 .font(.custom("", size: 15))
                         }
                         HStack{
                             Circle()
                                 .foregroundColor(Color(hue: 245, saturation: 0.54, brightness: 0.9).opacity(1))
                                 .frame(width: 6.24, height: 6.24, alignment: .center)
-                            Text("땅끝전복마을")
+                            Text("용추솔밭가든횟집")
                                 .font(.custom("", size: 15))
                         }.padding(.bottom)
                         
@@ -96,18 +93,14 @@ struct MyStarResultView_1: View {
                             Circle()
                                 .foregroundColor(Color(hue: 245, saturation: 0.54, brightness: 0.9).opacity(1))
                                 .frame(width: 6.24, height: 6.24, alignment: .center)
-                            Text("사구미어촌체험마을식당")
+                            Text("나로우주센터  우주과학관")
                                 .font(.custom("", size: 15))
                         }
+
     
                     }.offset(x:-50)
                     
-                    
-//                    NavigationLink("Link", destination: UserDetailWebView(url: "https://place.map.kakao.com/8341438"))
-//                        .zIndex(1.0)
-//                        .position(x:185, y:680)
-                    
-                    Image("RecommendCourseSelectPage_Map1_DDangKKut")
+                    Image("RecommendCourseSelectPage_Map2_DDangKKut")
                         .resizable()
                         .frame(width: 326, height: 204, alignment: .center)
                         .offset(y:100)
@@ -115,18 +108,14 @@ struct MyStarResultView_1: View {
                         .offset(y:130)
 
                 }
-
             }
-            .overlay(NavigationLink("Linkeeeeeeee", destination: UserDetailWebView(url: "https://place.map.kakao.com/8341438"))
-                        .position(x:300, y:300))
             
         }.ignoresSafeArea()
-        
     }
 }
 
-struct MyStarResultView_1_Previews: PreviewProvider {
+struct MyStarResultView_2_Previews: PreviewProvider {
     static var previews: some View {
-        MyStarResultView_1().environmentObject(ViewRouter())
+        MyStarResultView_2()
     }
 }
