@@ -1,8 +1,7 @@
 # YSDDH
 
 ### Background 
-<img src = "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/76b4c62d-d743-47eb-9709-fb5d43cc56f0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210819%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210819T014317Z&X-Amz-Expires=86400&X-Amz-Signature=f52a9cef89feeab6840afd732e1731c8d8bd995e3556606c72df0ca90b82e055&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
-<img width = 800, height= 600 src = "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/61085a3c-4b60-4158-bf66-c5cff7a1b196/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210819%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210819T014530Z&X-Amz-Expires=86400&X-Amz-Signature=688b2027ae60f24f355f5db2694f991ab1f6f1194a4d9c149e8c96b11e853062&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
+<img src = "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/76b4c62d-d743-47eb-9709-fb5d43cc56f0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210824%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210824T133918Z&X-Amz-Expires=86400&X-Amz-Signature=e1ed98ae38b4609695224219d9e296cec131a5dd07d16ee1067c6b02dcdb6c2e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
 
 ### Wireframe & Navigation overview 
 
