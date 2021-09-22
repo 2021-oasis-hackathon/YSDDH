@@ -1,5 +1,5 @@
 # YSDDH
-# 안되는걸 어떡하라고!! 
+ 
 ### Background 
 <img src = "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/76b4c62d-d743-47eb-9709-fb5d43cc56f0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210824%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210824T133918Z&X-Amz-Expires=86400&X-Amz-Signature=e1ed98ae38b4609695224219d9e296cec131a5dd07d16ee1067c6b02dcdb6c2e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
 <img src = "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/61085a3c-4b60-4158-bf66-c5cff7a1b196/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210824%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210824T133952Z&X-Amz-Expires=86400&X-Amz-Signature=9a89a2d96281e70312cbd6003d448df7d5bc70d00d1299ca900e3ac759752a2f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
