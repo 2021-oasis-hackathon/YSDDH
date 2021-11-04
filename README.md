@@ -1,15 +1,20 @@
 # YSDDH
- 
-### Background 
-<img src = "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/76b4c62d-d743-47eb-9709-fb5d43cc56f0/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210824%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210824T133918Z&X-Amz-Expires=86400&X-Amz-Signature=e1ed98ae38b4609695224219d9e296cec131a5dd07d16ee1067c6b02dcdb6c2e&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
-<img src = "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/61085a3c-4b60-4158-bf66-c5cff7a1b196/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210824%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210824T133952Z&X-Amz-Expires=86400&X-Amz-Signature=9a89a2d96281e70312cbd6003d448df7d5bc70d00d1299ca900e3ac759752a2f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
+
+### Introduction
+
+### <img src ="https://raw.githubusercontent.com/ChoiEungi/git-blog-image/upload/img/202111042148760.png">
+
+
 
 ### Wireframe & Navigation overview 
 
-<img src = "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/91ecc5c6-aedb-44d8-a24b-43f0cfe75081/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210819%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210819T015028Z&X-Amz-Expires=86400&X-Amz-Signature=7547481c125e50d35480635aaedf48dacbd488236fbecda3c1194d4b5cb5e786&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
-<img src = "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/67d1a8d9-ed70-435b-8c61-4f240585dd66/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210819%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210819T015217Z&X-Amz-Expires=86400&X-Amz-Signature=0c8bdd8bb39f2431dece85873d7e697ce69c9bf72ef21b41a05876695bdee718&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Untitled.png%22">
 
 
+<img src = "https://raw.githubusercontent.com/ChoiEungi/git-blog-image/upload/img/202111042150236.png">
+
+
+
+<img src="https://raw.githubusercontent.com/ChoiEungi/git-blog-image/upload/img/202111042151421.png">
 
 ### Tech stack 
 - SwiftUI 
@@ -41,7 +46,7 @@
 
 ### 앞으로, 별빛따라는
 
-<img src = "https://s3.us-west-2.amazonaws.com/secure.notion-static.com/b4292c6a-6603-4870-9df3-2b9dbe6d13dc/%EB%A7%88%EC%9D%B8%EB%93%9C%EB%A7%B5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210819%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210819T015008Z&X-Amz-Expires=86400&X-Amz-Signature=ccc53278371c56ca8e9e4c2232a3c5e7be07e9a545d18d3c9b1ef0b262cc9095&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22%25EB%25A7%2588%25EC%259D%25B8%25EB%2593%259C%25EB%25A7%25B5.png%22">
+
 
 앞으로 별빛따라는 ‘여행’ 과 ‘교육’을 중심으로 성장할거에요.
 
